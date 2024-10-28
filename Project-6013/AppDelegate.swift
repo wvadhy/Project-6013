@@ -15,15 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        do
-        {
-            let realm = try Realm();
-        }
-        catch
-        {
-            print("error caught attempting to connect to Realm! \(error)")
-        }
-        return true
     }
 
     // MARK: UISceneSession Lifecycle
