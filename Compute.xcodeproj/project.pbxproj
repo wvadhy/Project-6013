@@ -7,15 +7,165 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52642C3770BEF42DFD01FD6F /* Pods_Compute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C260B1438CBDD75D034B2C /* Pods_Compute.framework */; };
+		BE0649A52D65C73000735B5A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0649A42D65C73000735B5A /* TabBarController.swift */; };
+		BE0649A82D65CDCC00735B5A /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE0649A72D65CDCC00735B5A /* TaskCell.xib */; };
+		BE0649A92D65CDCC00735B5A /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0649A62D65CDCC00735B5A /* TaskCell.swift */; };
+		BE0649AB2D65D52200735B5A /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0649AA2D65D52200735B5A /* fire.png */; };
+		BE0649AF2D65EE0700735B5A /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0649AE2D65EE0700735B5A /* CountDownViewController.swift */; };
+		BE0649B12D65F16A00735B5A /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0649B02D65F16A00735B5A /* QuestionViewController.swift */; };
+		BE0649B32D65F5EE00735B5A /* profilePictureLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0649B22D65F5EE00735B5A /* profilePictureLight.png */; };
+		BE0649B52D65F7B200735B5A /* profilePictureDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0649B42D65F7B200735B5A /* profilePictureDark.png */; };
+		BE0649B72D65FC8700735B5A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0649B62D65FC8700735B5A /* AccountViewController.swift */; };
+		BE0649BB2D6602FF00735B5A /* tasksInfoLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0649BA2D6602FF00735B5A /* tasksInfoLight.png */; };
+		BE0649BD2D66045100735B5A /* tasksInfoDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0649BC2D66045100735B5A /* tasksInfoDark.png */; };
+		BE0649C12D66070200735B5A /* tasksSlideOneAnimated.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE0649C02D66070200735B5A /* tasksSlideOneAnimated.gif */; };
+		BE0649C52D66073A00735B5A /* TaskInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0649C42D66073A00735B5A /* TaskInfoViewController.swift */; };
+		BE0649D32D6622B800735B5A /* tasksSlideTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0649D22D6622B800735B5A /* tasksSlideTwo.png */; };
+		BE0649D52D6622C300735B5A /* tasksSlideOne.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0649D42D6622C300735B5A /* tasksSlideOne.png */; };
+		BE0649D92D6632CA00735B5A /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0649D82D6632CA00735B5A /* StatsViewController.swift */; };
+		BE0649DB2D6671D000735B5A /* water.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0649DA2D6671D000735B5A /* water.png */; };
+		BE0649DD2D6672D600735B5A /* tasksSlideThree.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0649DC2D6672D600735B5A /* tasksSlideThree.png */; };
+		BE0649DF2D667AE600735B5A /* ShopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0649DE2D667AE600735B5A /* ShopCollectionViewCell.swift */; };
+		BE06939B2D81AEE300A15327 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE06939A2D81AEE300A15327 /* Activity.swift */; };
+		BE06939F2D81C50D00A15327 /* DeepDiveBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE06939E2D81C50D00A15327 /* DeepDiveBrain.swift */; };
+		BE0693A12D81D20F00A15327 /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0693A02D81D20F00A15327 /* AnalysisViewController.swift */; };
+		BE0693A32D81D61C00A15327 /* Trophy.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0693A22D81D61B00A15327 /* Trophy.png */; };
+		BE0D31232D6D14E300C1D99C /* rushResultClipBoardLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31222D6D14E300C1D99C /* rushResultClipBoardLight.png */; };
+		BE0D31272D6D16B400C1D99C /* rushResultClipBoardDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31262D6D16B400C1D99C /* rushResultClipBoardDark.png */; };
+		BE0D31292D6D17BC00C1D99C /* rushResultCornerLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31282D6D17BC00C1D99C /* rushResultCornerLight.png */; };
+		BE0D312B2D6D18A300C1D99C /* rushResultCornerDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D312A2D6D18A300C1D99C /* rushResultCornerDark.png */; };
+		BE0D312D2D6D29A200C1D99C /* RushResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D312C2D6D29A200C1D99C /* RushResultViewController.swift */; };
+		BE0D31312D6D3D7600C1D99C /* rushCornerLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31302D6D3D7600C1D99C /* rushCornerLight.png */; };
+		BE0D31332D6D3E0C00C1D99C /* rushCornerDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31322D6D3E0C00C1D99C /* rushCornerDark.png */; };
+		BE0D313A2D6D480700C1D99C /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D31392D6D480700C1D99C /* BounceButton.swift */; };
+		BE0D313C2D6DCC9C00C1D99C /* levelBannerLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D313B2D6DCC9C00C1D99C /* levelBannerLight.png */; };
+		BE0D313E2D6DCDCE00C1D99C /* levelBannerDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D313D2D6DCDCE00C1D99C /* levelBannerDark.png */; };
+		BE0D31402D6E01FE00C1D99C /* merchant.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D313F2D6E01FE00C1D99C /* merchant.png */; };
+		BE0D31422D6E0EEE00C1D99C /* StatsBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D31412D6E0EEE00C1D99C /* StatsBrain.swift */; };
+		BE0D31442D6E234000C1D99C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31432D6E234000C1D99C /* GoogleService-Info.plist */; };
+		BE0D31472D6E24C500C1D99C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BE0D31462D6E24C500C1D99C /* FirebaseAuth */; };
+		BE0D31492D6E24C500C1D99C /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = BE0D31482D6E24C500C1D99C /* FirebaseCore */; };
+		BE0D314B2D6E24C500C1D99C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BE0D314A2D6E24C500C1D99C /* FirebaseFirestore */; };
+		BE0D314D2D6E26E800C1D99C /* entryScreenLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D314C2D6E26E800C1D99C /* entryScreenLogo.png */; };
+		BE0D31512D6F71CC00C1D99C /* BadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D31502D6F71CC00C1D99C /* BadgeViewController.swift */; };
+		BE0D31532D6F72EF00C1D99C /* BadgeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D31522D6F72EF00C1D99C /* BadgeCollectionViewCell.swift */; };
+		BE0D31572D705CB800C1D99C /* wrongAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31552D705CB800C1D99C /* wrongAnswer.mp3 */; };
+		BE0D31582D705CB800C1D99C /* correctAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31562D705CB800C1D99C /* correctAnswer.mp3 */; };
+		BE0D315A2D705FE300C1D99C /* thumbsUpLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31592D705FE200C1D99C /* thumbsUpLight.png */; };
+		BE0D315C2D70616000C1D99C /* wrongCrossLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D315B2D70616000C1D99C /* wrongCrossLight.png */; };
 		BE7CEACB2D64EBEA0047C5F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7CEACA2D64EBEA0047C5F2 /* AppDelegate.swift */; };
 		BE7CEACD2D64EBEA0047C5F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7CEACC2D64EBEA0047C5F2 /* SceneDelegate.swift */; };
 		BE7CEACF2D64EBEA0047C5F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7CEACE2D64EBEA0047C5F2 /* ViewController.swift */; };
 		BE7CEAD22D64EBEA0047C5F2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BE7CEAD12D64EBEA0047C5F2 /* Base */; };
 		BE7CEAD42D64EBEB0047C5F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE7CEAD32D64EBEB0047C5F2 /* Assets.xcassets */; };
 		BE7CEAD72D64EBEB0047C5F2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BE7CEAD62D64EBEB0047C5F2 /* Base */; };
+		BE7CEAE52D64F1D00047C5F2 /* logoDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7CEAE32D64F1D00047C5F2 /* logoDark.png */; };
+		BE7CEAE62D64F1D00047C5F2 /* logoLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7CEAE42D64F1D00047C5F2 /* logoLight.png */; };
+		BE7CEAE92D64F95F0047C5F2 /* lightBulbLight.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE7CEAE72D64F95E0047C5F2 /* lightBulbLight.gif */; };
+		BE7CEAEA2D64F95F0047C5F2 /* lightBulbDark.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE7CEAE82D64F95F0047C5F2 /* lightBulbDark.gif */; };
+		BE7CEAEC2D64FA160047C5F2 /* gifLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7CEAEB2D64FA160047C5F2 /* gifLoader.swift */; };
+		BE7CEAF02D6502CD0047C5F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7CEAEF2D6502CD0047C5F2 /* LoginViewController.swift */; };
+		BE7CEAF42D6508A70047C5F2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7CEAF32D6508A70047C5F2 /* RegisterViewController.swift */; };
+		BE7CEAF62D650A680047C5F2 /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7CEAF52D650A680047C5F2 /* ForgotViewController.swift */; };
+		BEA452B62D82284900F277F7 /* CodeRushQuestionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA452B52D82284900F277F7 /* CodeRushQuestionList.swift */; };
+		BEA452B82D82F1A500F277F7 /* TasksBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA452B72D82F1A400F277F7 /* TasksBrain.swift */; };
+		BEA452BA2D82F2A700F277F7 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA452B92D82F2A700F277F7 /* UserData.swift */; };
+		BEAD39592D75D63D000018C5 /* streakCoins.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAD39582D75D63D000018C5 /* streakCoins.png */; };
+		BEAD395B2D770966000018C5 /* dataStructureLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAD395A2D770965000018C5 /* dataStructureLight.png */; };
+		BEAD395F2D7709F9000018C5 /* dataStructuresDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAD395E2D7709F9000018C5 /* dataStructuresDark.png */; };
+		BEAD39612D770AB4000018C5 /* difficultyLogoDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAD39602D770AB4000018C5 /* difficultyLogoDark.png */; };
+		BEAD39632D770DF5000018C5 /* algorithmsLogoLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAD39622D770DF5000018C5 /* algorithmsLogoLight.png */; };
+		BEAD39652D770E3C000018C5 /* algorithmsLogoDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAD39642D770E3C000018C5 /* algorithmsLogoDark.png */; };
+		BEAD39682D770F48000018C5 /* dynamicProgrammingLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAD39662D770F48000018C5 /* dynamicProgrammingLight.png */; };
+		BEAD39692D770F48000018C5 /* dynamicProgrammingDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAD39672D770F48000018C5 /* dynamicProgrammingDark.png */; };
+		BEAD396C2D771015000018C5 /* mathsLogoDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAD396A2D771014000018C5 /* mathsLogoDark.png */; };
+		BEAD396D2D771015000018C5 /* mathsLogoLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAD396B2D771015000018C5 /* mathsLogoLight.png */; };
+		BEAD396F2D7788A0000018C5 /* cppLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAD396E2D77889F000018C5 /* cppLogo.png */; };
+		BEAD39712D7788AD000018C5 /* javaLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAD39702D7788AD000018C5 /* javaLogo.png */; };
+		BEAD39732D7788B4000018C5 /* pythonLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAD39722D7788B4000018C5 /* pythonLogo.png */; };
+		BEAD39752D7788BB000018C5 /* rubyLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAD39742D7788BB000018C5 /* rubyLogo.png */; };
+		BEAD39772D7CCD4F000018C5 /* leaderboardBackgroundDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAD39762D7CCD4E000018C5 /* leaderboardBackgroundDark.png */; };
+		BEAD397B2D809EBA000018C5 /* CodeRushQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD397A2D809EBA000018C5 /* CodeRushQuestion.swift */; };
+		BEAD397D2D80A0A3000018C5 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD397C2D80A0A3000018C5 /* Response.swift */; };
+		BEAD39802D80D212000018C5 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = BEAD397F2D80D212000018C5 /* OpenAI */; };
+		BEAD39822D80D240000018C5 /* CodeRushBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD39812D80D240000018C5 /* CodeRushBrain.swift */; };
+		BEAD39842D80D35D000018C5 /* LLM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD39832D80D35D000018C5 /* LLM.swift */; };
+		BEAD398C2D80DB5D000018C5 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD398B2D80DB5D000018C5 /* Token.swift */; };
+		BEAE16CB2D81A0C200383869 /* LLMDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE16CA2D81A0C200383869 /* LLMDelegate.swift */; };
+		BEAE16CD2D81A3AF00383869 /* LLMNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE16CC2D81A3AF00383869 /* LLMNetwork.swift */; };
+		BEB37BD32D748BE200A5A26D /* difficultyLogoLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BEB37BD22D748BE200A5A26D /* difficultyLogoLight.png */; };
+		BEB37BD52D7493F200A5A26D /* leaderboardBackgroundLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BEB37BD42D7493F100A5A26D /* leaderboardBackgroundLight.png */; };
+		BEC7CA712D65307C007DE945 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7CA702D65307C007DE945 /* TaskViewController.swift */; };
+		BEC7CA752D65434F007DE945 /* inputCapsuleLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BEC7CA742D65434F007DE945 /* inputCapsuleLight.png */; };
+		BEC7CA772D65445E007DE945 /* inputCapsuleDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BEC7CA762D65445E007DE945 /* inputCapsuleDark.png */; };
+		BEC7CA792D654ADC007DE945 /* appIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BEC7CA782D654ADB007DE945 /* appIcon.png */; };
+		BEC9A63F2D70A03400C2D716 /* rushGodBadge.png in Resources */ = {isa = PBXBuildFile; fileRef = BEC9A63E2D70A03400C2D716 /* rushGodBadge.png */; };
+		BEC9A6432D70A12700C2D716 /* darkDepthsBadge.png in Resources */ = {isa = PBXBuildFile; fileRef = BEC9A6422D70A12700C2D716 /* darkDepthsBadge.png */; };
+		BEC9A6462D70A21200C2D716 /* veteranBadge.png in Resources */ = {isa = PBXBuildFile; fileRef = BEC9A6442D70A21200C2D716 /* veteranBadge.png */; };
+		BEC9A6472D70A21200C2D716 /* trenchBadge.png in Resources */ = {isa = PBXBuildFile; fileRef = BEC9A6452D70A21200C2D716 /* trenchBadge.png */; };
+		BEC9A6492D70D87000C2D716 /* mainFrameBadge.png in Resources */ = {isa = PBXBuildFile; fileRef = BEC9A6482D70D87000C2D716 /* mainFrameBadge.png */; };
+		BEC9A64B2D70DB5F00C2D716 /* cryptoBadge.png in Resources */ = {isa = PBXBuildFile; fileRef = BEC9A64A2D70DB5F00C2D716 /* cryptoBadge.png */; };
+		BEC9A64D2D70DBF300C2D716 /* fullMarksBadge.png in Resources */ = {isa = PBXBuildFile; fileRef = BEC9A64C2D70DBF300C2D716 /* fullMarksBadge.png */; };
+		BEC9A64F2D70DC8100C2D716 /* curiousBadge.png in Resources */ = {isa = PBXBuildFile; fileRef = BEC9A64E2D70DC8100C2D716 /* curiousBadge.png */; };
+		BEC9A6542D70EE3600C2D716 /* deepDiveTextBoxLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BEC9A6522D70EE3500C2D716 /* deepDiveTextBoxLight.png */; };
+		BEC9A6552D70EE3600C2D716 /* deepDiveTextBoxDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BEC9A6532D70EE3600C2D716 /* deepDiveTextBoxDark.png */; };
+		BEC9A6572D711BE100C2D716 /* DeepDiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9A6562D711BE100C2D716 /* DeepDiveViewController.swift */; };
+		BEC9A65A2D711D4000C2D716 /* deepDiveCornerDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BEC9A6582D711D4000C2D716 /* deepDiveCornerDark.png */; };
+		BEC9A65B2D711D4000C2D716 /* deepDiveCornerLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BEC9A6592D711D4000C2D716 /* deepDiveCornerLight.png */; };
+		BEDD46A42D66853C004DBC47 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD46A32D66853C004DBC47 /* ShopViewController.swift */; };
+		BEDD46A82D6685C6004DBC47 /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD46A72D6685C6004DBC47 /* ShopItem.swift */; };
+		BEDD46AA2D6686A2004DBC47 /* ramLowLevel.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDD46A92D6686A2004DBC47 /* ramLowLevel.png */; };
+		BEDD46B52D67C79D004DBC47 /* countdownBackgroundDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDD46B32D67C79D004DBC47 /* countdownBackgroundDark.png */; };
+		BEDD46B62D67C79D004DBC47 /* countdownBackgroundLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDD46B42D67C79D004DBC47 /* countdownBackgroundLight.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4047A20809C9C9A1FB6BA205 /* Pods-Compute.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Compute.debug.xcconfig"; path = "Target Support Files/Pods-Compute/Pods-Compute.debug.xcconfig"; sourceTree = "<group>"; };
+		73C260B1438CBDD75D034B2C /* Pods_Compute.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Compute.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE0649A42D65C73000735B5A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		BE0649A62D65CDCC00735B5A /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		BE0649A72D65CDCC00735B5A /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		BE0649AA2D65D52200735B5A /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
+		BE0649AE2D65EE0700735B5A /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
+		BE0649B02D65F16A00735B5A /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		BE0649B22D65F5EE00735B5A /* profilePictureLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profilePictureLight.png; sourceTree = "<group>"; };
+		BE0649B42D65F7B200735B5A /* profilePictureDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profilePictureDark.png; sourceTree = "<group>"; };
+		BE0649B62D65FC8700735B5A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		BE0649BA2D6602FF00735B5A /* tasksInfoLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tasksInfoLight.png; path = ../../../../../Downloads/Compute/Assets/tasksInfoLight.png; sourceTree = "<group>"; };
+		BE0649BC2D66045100735B5A /* tasksInfoDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tasksInfoDark.png; sourceTree = "<group>"; };
+		BE0649C02D66070200735B5A /* tasksSlideOneAnimated.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tasksSlideOneAnimated.gif; sourceTree = "<group>"; };
+		BE0649C42D66073A00735B5A /* TaskInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInfoViewController.swift; sourceTree = "<group>"; };
+		BE0649D22D6622B800735B5A /* tasksSlideTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tasksSlideTwo.png; sourceTree = "<group>"; };
+		BE0649D42D6622C300735B5A /* tasksSlideOne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tasksSlideOne.png; path = ../../../../../Downloads/Compute/Assets/tasksSlideOne.png; sourceTree = "<group>"; };
+		BE0649D82D6632CA00735B5A /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		BE0649DA2D6671D000735B5A /* water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = water.png; sourceTree = "<group>"; };
+		BE0649DC2D6672D600735B5A /* tasksSlideThree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tasksSlideThree.png; sourceTree = "<group>"; };
+		BE0649DE2D667AE600735B5A /* ShopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCollectionViewCell.swift; sourceTree = "<group>"; };
+		BE06939A2D81AEE300A15327 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		BE06939E2D81C50D00A15327 /* DeepDiveBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveBrain.swift; sourceTree = "<group>"; };
+		BE0693A02D81D20F00A15327 /* AnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
+		BE0693A22D81D61B00A15327 /* Trophy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trophy.png; sourceTree = "<group>"; };
+		BE0D31222D6D14E300C1D99C /* rushResultClipBoardLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rushResultClipBoardLight.png; sourceTree = "<group>"; };
+		BE0D31262D6D16B400C1D99C /* rushResultClipBoardDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rushResultClipBoardDark.png; path = ../../../../../Downloads/Compute/Assets/rushResultClipBoardDark.png; sourceTree = "<group>"; };
+		BE0D31282D6D17BC00C1D99C /* rushResultCornerLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rushResultCornerLight.png; sourceTree = "<group>"; };
+		BE0D312A2D6D18A300C1D99C /* rushResultCornerDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rushResultCornerDark.png; sourceTree = "<group>"; };
+		BE0D312C2D6D29A200C1D99C /* RushResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RushResultViewController.swift; sourceTree = "<group>"; };
+		BE0D31302D6D3D7600C1D99C /* rushCornerLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rushCornerLight.png; path = ../../../../../Downloads/Compute/Assets/rushCornerLight.png; sourceTree = "<group>"; };
+		BE0D31322D6D3E0C00C1D99C /* rushCornerDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rushCornerDark.png; sourceTree = "<group>"; };
+		BE0D31392D6D480700C1D99C /* BounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
+		BE0D313B2D6DCC9C00C1D99C /* levelBannerLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelBannerLight.png; sourceTree = "<group>"; };
+		BE0D313D2D6DCDCE00C1D99C /* levelBannerDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelBannerDark.png; sourceTree = "<group>"; };
+		BE0D313F2D6E01FE00C1D99C /* merchant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = merchant.png; sourceTree = "<group>"; };
+		BE0D31412D6E0EEE00C1D99C /* StatsBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsBrain.swift; sourceTree = "<group>"; };
+		BE0D31432D6E234000C1D99C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BE0D314C2D6E26E800C1D99C /* entryScreenLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = entryScreenLogo.png; sourceTree = "<group>"; };
+		BE0D31502D6F71CC00C1D99C /* BadgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeViewController.swift; sourceTree = "<group>"; };
+		BE0D31522D6F72EF00C1D99C /* BadgeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCollectionViewCell.swift; sourceTree = "<group>"; };
+		BE0D31552D705CB800C1D99C /* wrongAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrongAnswer.mp3; sourceTree = "<group>"; };
+		BE0D31562D705CB800C1D99C /* correctAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correctAnswer.mp3; sourceTree = "<group>"; };
+		BE0D31592D705FE200C1D99C /* thumbsUpLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbsUpLight.png; sourceTree = "<group>"; };
+		BE0D315B2D70616000C1D99C /* wrongCrossLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrongCrossLight.png; sourceTree = "<group>"; };
 		BE7CEAC72D64EBEA0047C5F2 /* Compute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7CEACA2D64EBEA0047C5F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE7CEACC2D64EBEA0047C5F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +174,64 @@
 		BE7CEAD32D64EBEB0047C5F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE7CEAD62D64EBEB0047C5F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE7CEAD82D64EBEB0047C5F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE7CEAE32D64F1D00047C5F2 /* logoDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoDark.png; sourceTree = "<group>"; };
+		BE7CEAE42D64F1D00047C5F2 /* logoLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoLight.png; sourceTree = "<group>"; };
+		BE7CEAE72D64F95E0047C5F2 /* lightBulbLight.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lightBulbLight.gif; sourceTree = "<group>"; };
+		BE7CEAE82D64F95F0047C5F2 /* lightBulbDark.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lightBulbDark.gif; sourceTree = "<group>"; };
+		BE7CEAEB2D64FA160047C5F2 /* gifLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifLoader.swift; sourceTree = "<group>"; };
+		BE7CEAEF2D6502CD0047C5F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BE7CEAF32D6508A70047C5F2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		BE7CEAF52D650A680047C5F2 /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
+		BEA452B52D82284900F277F7 /* CodeRushQuestionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeRushQuestionList.swift; sourceTree = "<group>"; };
+		BEA452B72D82F1A400F277F7 /* TasksBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksBrain.swift; sourceTree = "<group>"; };
+		BEA452B92D82F2A700F277F7 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		BEAD39582D75D63D000018C5 /* streakCoins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = streakCoins.png; sourceTree = "<group>"; };
+		BEAD395A2D770965000018C5 /* dataStructureLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dataStructureLight.png; sourceTree = "<group>"; };
+		BEAD395E2D7709F9000018C5 /* dataStructuresDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dataStructuresDark.png; sourceTree = "<group>"; };
+		BEAD39602D770AB4000018C5 /* difficultyLogoDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = difficultyLogoDark.png; sourceTree = "<group>"; };
+		BEAD39622D770DF5000018C5 /* algorithmsLogoLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = algorithmsLogoLight.png; sourceTree = "<group>"; };
+		BEAD39642D770E3C000018C5 /* algorithmsLogoDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = algorithmsLogoDark.png; sourceTree = "<group>"; };
+		BEAD39662D770F48000018C5 /* dynamicProgrammingLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dynamicProgrammingLight.png; sourceTree = "<group>"; };
+		BEAD39672D770F48000018C5 /* dynamicProgrammingDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dynamicProgrammingDark.png; sourceTree = "<group>"; };
+		BEAD396A2D771014000018C5 /* mathsLogoDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mathsLogoDark.png; sourceTree = "<group>"; };
+		BEAD396B2D771015000018C5 /* mathsLogoLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mathsLogoLight.png; sourceTree = "<group>"; };
+		BEAD396E2D77889F000018C5 /* cppLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cppLogo.png; sourceTree = "<group>"; };
+		BEAD39702D7788AD000018C5 /* javaLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = javaLogo.png; sourceTree = "<group>"; };
+		BEAD39722D7788B4000018C5 /* pythonLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pythonLogo.png; sourceTree = "<group>"; };
+		BEAD39742D7788BB000018C5 /* rubyLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rubyLogo.png; sourceTree = "<group>"; };
+		BEAD39762D7CCD4E000018C5 /* leaderboardBackgroundDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaderboardBackgroundDark.png; sourceTree = "<group>"; };
+		BEAD397A2D809EBA000018C5 /* CodeRushQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeRushQuestion.swift; sourceTree = "<group>"; };
+		BEAD397C2D80A0A3000018C5 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		BEAD39812D80D240000018C5 /* CodeRushBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeRushBrain.swift; sourceTree = "<group>"; };
+		BEAD39832D80D35D000018C5 /* LLM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLM.swift; sourceTree = "<group>"; };
+		BEAD398B2D80DB5D000018C5 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		BEAE16CA2D81A0C200383869 /* LLMDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMDelegate.swift; sourceTree = "<group>"; };
+		BEAE16CC2D81A3AF00383869 /* LLMNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMNetwork.swift; sourceTree = "<group>"; };
+		BEB37BD22D748BE200A5A26D /* difficultyLogoLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = difficultyLogoLight.png; sourceTree = "<group>"; };
+		BEB37BD42D7493F100A5A26D /* leaderboardBackgroundLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaderboardBackgroundLight.png; sourceTree = "<group>"; };
+		BEC7CA702D65307C007DE945 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		BEC7CA742D65434F007DE945 /* inputCapsuleLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = inputCapsuleLight.png; path = ../../../../../Downloads/Compute/Assets/inputCapsuleLight.png; sourceTree = "<group>"; };
+		BEC7CA762D65445E007DE945 /* inputCapsuleDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inputCapsuleDark.png; sourceTree = "<group>"; };
+		BEC7CA782D654ADB007DE945 /* appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon.png; sourceTree = "<group>"; };
+		BEC9A63E2D70A03400C2D716 /* rushGodBadge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rushGodBadge.png; sourceTree = "<group>"; };
+		BEC9A6422D70A12700C2D716 /* darkDepthsBadge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = darkDepthsBadge.png; path = ../../../../../Downloads/Compute/Badges/darkDepthsBadge.png; sourceTree = "<group>"; };
+		BEC9A6442D70A21200C2D716 /* veteranBadge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = veteranBadge.png; sourceTree = "<group>"; };
+		BEC9A6452D70A21200C2D716 /* trenchBadge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trenchBadge.png; sourceTree = "<group>"; };
+		BEC9A6482D70D87000C2D716 /* mainFrameBadge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainFrameBadge.png; sourceTree = "<group>"; };
+		BEC9A64A2D70DB5F00C2D716 /* cryptoBadge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cryptoBadge.png; sourceTree = "<group>"; };
+		BEC9A64C2D70DBF300C2D716 /* fullMarksBadge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fullMarksBadge.png; sourceTree = "<group>"; };
+		BEC9A64E2D70DC8100C2D716 /* curiousBadge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = curiousBadge.png; sourceTree = "<group>"; };
+		BEC9A6522D70EE3500C2D716 /* deepDiveTextBoxLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deepDiveTextBoxLight.png; sourceTree = "<group>"; };
+		BEC9A6532D70EE3600C2D716 /* deepDiveTextBoxDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deepDiveTextBoxDark.png; sourceTree = "<group>"; };
+		BEC9A6562D711BE100C2D716 /* DeepDiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveViewController.swift; sourceTree = "<group>"; };
+		BEC9A6582D711D4000C2D716 /* deepDiveCornerDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deepDiveCornerDark.png; sourceTree = "<group>"; };
+		BEC9A6592D711D4000C2D716 /* deepDiveCornerLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deepDiveCornerLight.png; sourceTree = "<group>"; };
+		BEDD46A32D66853C004DBC47 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		BEDD46A72D6685C6004DBC47 /* ShopItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItem.swift; sourceTree = "<group>"; };
+		BEDD46A92D6686A2004DBC47 /* ramLowLevel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ramLowLevel.png; sourceTree = "<group>"; };
+		BEDD46B32D67C79D004DBC47 /* countdownBackgroundDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = countdownBackgroundDark.png; path = ../../../../../Downloads/countdownBackgroundDark.png; sourceTree = "<group>"; };
+		BEDD46B42D67C79D004DBC47 /* countdownBackgroundLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = countdownBackgroundLight.png; path = ../../../../../Downloads/countdownBackgroundLight.png; sourceTree = "<group>"; };
+		D050F5D9BEBE5BA3C9969225 /* Pods-Compute.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Compute.release.xcconfig"; path = "Target Support Files/Pods-Compute/Pods-Compute.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +239,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEAD39802D80D212000018C5 /* OpenAI in Frameworks */,
+				52642C3770BEF42DFD01FD6F /* Pods_Compute.framework in Frameworks */,
+				BE0D314B2D6E24C500C1D99C /* FirebaseFirestore in Frameworks */,
+				BE0D31492D6E24C500C1D99C /* FirebaseCore in Frameworks */,
+				BE0D31472D6E24C500C1D99C /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4F3AFB997C5F5415DC85A0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4047A20809C9C9A1FB6BA205 /* Pods-Compute.debug.xcconfig */,
+				D050F5D9BEBE5BA3C9969225 /* Pods-Compute.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BE0D31382D6D47EE00C1D99C /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				BE0D31392D6D480700C1D99C /* BounceButton.swift */,
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		BE0D31542D705CAC00C1D99C /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				BE0D31562D705CB800C1D99C /* correctAnswer.mp3 */,
+				BE0D31552D705CB800C1D99C /* wrongAnswer.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		BE7CEABE2D64EBEA0047C5F2 = {
 			isa = PBXGroup;
 			children = (
 				BE7CEAC92D64EBEA0047C5F2 /* Compute */,
 				BE7CEAC82D64EBEA0047C5F2 /* Products */,
+				B4F3AFB997C5F5415DC85A0E /* Pods */,
+				F73814003A1B367D0B2148A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +297,162 @@
 		BE7CEAC92D64EBEA0047C5F2 /* Compute */ = {
 			isa = PBXGroup;
 			children = (
+				BEC9A63D2D70A02B00C2D716 /* Badges */,
+				BE0D31542D705CAC00C1D99C /* Audio */,
+				BE0D31382D6D47EE00C1D99C /* CustomControls */,
+				BE7CEAE22D64F1C30047C5F2 /* Resources */,
+				BE7CEAE02D64EC000047C5F2 /* Controller */,
+				BE7CEADF2D64EBFB0047C5F2 /* View */,
+				BE7CEADE2D64EBF50047C5F2 /* Model */,
 				BE7CEACA2D64EBEA0047C5F2 /* AppDelegate.swift */,
 				BE7CEACC2D64EBEA0047C5F2 /* SceneDelegate.swift */,
-				BE7CEACE2D64EBEA0047C5F2 /* ViewController.swift */,
-				BE7CEAD02D64EBEA0047C5F2 /* Main.storyboard */,
 				BE7CEAD32D64EBEB0047C5F2 /* Assets.xcassets */,
 				BE7CEAD52D64EBEB0047C5F2 /* LaunchScreen.storyboard */,
 				BE7CEAD82D64EBEB0047C5F2 /* Info.plist */,
+				BE0D31432D6E234000C1D99C /* GoogleService-Info.plist */,
 			);
 			path = Compute;
+			sourceTree = "<group>";
+		};
+		BE7CEADE2D64EBF50047C5F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE7CEAEB2D64FA160047C5F2 /* gifLoader.swift */,
+				BEDD46A72D6685C6004DBC47 /* ShopItem.swift */,
+				BE0D31412D6E0EEE00C1D99C /* StatsBrain.swift */,
+				BEAD397A2D809EBA000018C5 /* CodeRushQuestion.swift */,
+				BEAD397C2D80A0A3000018C5 /* Response.swift */,
+				BEAD39812D80D240000018C5 /* CodeRushBrain.swift */,
+				BEAD39832D80D35D000018C5 /* LLM.swift */,
+				BEAD398B2D80DB5D000018C5 /* Token.swift */,
+				BEAE16CA2D81A0C200383869 /* LLMDelegate.swift */,
+				BEAE16CC2D81A3AF00383869 /* LLMNetwork.swift */,
+				BE06939A2D81AEE300A15327 /* Activity.swift */,
+				BE06939E2D81C50D00A15327 /* DeepDiveBrain.swift */,
+				BEA452B52D82284900F277F7 /* CodeRushQuestionList.swift */,
+				BEA452B72D82F1A400F277F7 /* TasksBrain.swift */,
+				BEA452B92D82F2A700F277F7 /* UserData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE7CEADF2D64EBFB0047C5F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE7CEAD02D64EBEA0047C5F2 /* Main.storyboard */,
+				BE0649A62D65CDCC00735B5A /* TaskCell.swift */,
+				BE0649A72D65CDCC00735B5A /* TaskCell.xib */,
+				BE0649DE2D667AE600735B5A /* ShopCollectionViewCell.swift */,
+				BE0D31522D6F72EF00C1D99C /* BadgeCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BE7CEAE02D64EC000047C5F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BE7CEACE2D64EBEA0047C5F2 /* ViewController.swift */,
+				BE7CEAEF2D6502CD0047C5F2 /* LoginViewController.swift */,
+				BE7CEAF32D6508A70047C5F2 /* RegisterViewController.swift */,
+				BE7CEAF52D650A680047C5F2 /* ForgotViewController.swift */,
+				BEC7CA702D65307C007DE945 /* TaskViewController.swift */,
+				BE0649A42D65C73000735B5A /* TabBarController.swift */,
+				BE0649AE2D65EE0700735B5A /* CountDownViewController.swift */,
+				BE0649B02D65F16A00735B5A /* QuestionViewController.swift */,
+				BE0649B62D65FC8700735B5A /* AccountViewController.swift */,
+				BE0649C42D66073A00735B5A /* TaskInfoViewController.swift */,
+				BE0649D82D6632CA00735B5A /* StatsViewController.swift */,
+				BEDD46A32D66853C004DBC47 /* ShopViewController.swift */,
+				BE0D312C2D6D29A200C1D99C /* RushResultViewController.swift */,
+				BE0D31502D6F71CC00C1D99C /* BadgeViewController.swift */,
+				BEC9A6562D711BE100C2D716 /* DeepDiveViewController.swift */,
+				BE0693A02D81D20F00A15327 /* AnalysisViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BE7CEAE22D64F1C30047C5F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE0693A22D81D61B00A15327 /* Trophy.png */,
+				BEAD39762D7CCD4E000018C5 /* leaderboardBackgroundDark.png */,
+				BEAD39722D7788B4000018C5 /* pythonLogo.png */,
+				BEAD39742D7788BB000018C5 /* rubyLogo.png */,
+				BEAD39702D7788AD000018C5 /* javaLogo.png */,
+				BEAD396E2D77889F000018C5 /* cppLogo.png */,
+				BEAD396A2D771014000018C5 /* mathsLogoDark.png */,
+				BEAD396B2D771015000018C5 /* mathsLogoLight.png */,
+				BEAD39672D770F48000018C5 /* dynamicProgrammingDark.png */,
+				BEAD39662D770F48000018C5 /* dynamicProgrammingLight.png */,
+				BEAD39642D770E3C000018C5 /* algorithmsLogoDark.png */,
+				BEAD39622D770DF5000018C5 /* algorithmsLogoLight.png */,
+				BEAD39602D770AB4000018C5 /* difficultyLogoDark.png */,
+				BEAD395E2D7709F9000018C5 /* dataStructuresDark.png */,
+				BEAD395A2D770965000018C5 /* dataStructureLight.png */,
+				BEAD39582D75D63D000018C5 /* streakCoins.png */,
+				BEB37BD42D7493F100A5A26D /* leaderboardBackgroundLight.png */,
+				BEB37BD22D748BE200A5A26D /* difficultyLogoLight.png */,
+				BEC9A6582D711D4000C2D716 /* deepDiveCornerDark.png */,
+				BEC9A6592D711D4000C2D716 /* deepDiveCornerLight.png */,
+				BEC9A6532D70EE3600C2D716 /* deepDiveTextBoxDark.png */,
+				BEC9A6522D70EE3500C2D716 /* deepDiveTextBoxLight.png */,
+				BE0D315B2D70616000C1D99C /* wrongCrossLight.png */,
+				BE0D31592D705FE200C1D99C /* thumbsUpLight.png */,
+				BE0D314C2D6E26E800C1D99C /* entryScreenLogo.png */,
+				BE0D313F2D6E01FE00C1D99C /* merchant.png */,
+				BE0D313D2D6DCDCE00C1D99C /* levelBannerDark.png */,
+				BE0D313B2D6DCC9C00C1D99C /* levelBannerLight.png */,
+				BE0D31322D6D3E0C00C1D99C /* rushCornerDark.png */,
+				BE0D31302D6D3D7600C1D99C /* rushCornerLight.png */,
+				BE0D312A2D6D18A300C1D99C /* rushResultCornerDark.png */,
+				BE0D31282D6D17BC00C1D99C /* rushResultCornerLight.png */,
+				BE0D31262D6D16B400C1D99C /* rushResultClipBoardDark.png */,
+				BE0D31222D6D14E300C1D99C /* rushResultClipBoardLight.png */,
+				BEDD46B32D67C79D004DBC47 /* countdownBackgroundDark.png */,
+				BEDD46B42D67C79D004DBC47 /* countdownBackgroundLight.png */,
+				BEDD46A92D6686A2004DBC47 /* ramLowLevel.png */,
+				BE0649DC2D6672D600735B5A /* tasksSlideThree.png */,
+				BE0649DA2D6671D000735B5A /* water.png */,
+				BE0649D42D6622C300735B5A /* tasksSlideOne.png */,
+				BE0649D22D6622B800735B5A /* tasksSlideTwo.png */,
+				BE0649C02D66070200735B5A /* tasksSlideOneAnimated.gif */,
+				BE0649BC2D66045100735B5A /* tasksInfoDark.png */,
+				BE0649BA2D6602FF00735B5A /* tasksInfoLight.png */,
+				BE0649B42D65F7B200735B5A /* profilePictureDark.png */,
+				BE0649B22D65F5EE00735B5A /* profilePictureLight.png */,
+				BE0649AA2D65D52200735B5A /* fire.png */,
+				BEC7CA782D654ADB007DE945 /* appIcon.png */,
+				BEC7CA762D65445E007DE945 /* inputCapsuleDark.png */,
+				BEC7CA742D65434F007DE945 /* inputCapsuleLight.png */,
+				BE7CEAE72D64F95E0047C5F2 /* lightBulbLight.gif */,
+				BE7CEAE82D64F95F0047C5F2 /* lightBulbDark.gif */,
+				BE7CEAE32D64F1D00047C5F2 /* logoDark.png */,
+				BE7CEAE42D64F1D00047C5F2 /* logoLight.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BEC9A63D2D70A02B00C2D716 /* Badges */ = {
+			isa = PBXGroup;
+			children = (
+				BEC9A64E2D70DC8100C2D716 /* curiousBadge.png */,
+				BEC9A64C2D70DBF300C2D716 /* fullMarksBadge.png */,
+				BEC9A64A2D70DB5F00C2D716 /* cryptoBadge.png */,
+				BEC9A6482D70D87000C2D716 /* mainFrameBadge.png */,
+				BEC9A6452D70A21200C2D716 /* trenchBadge.png */,
+				BEC9A6442D70A21200C2D716 /* veteranBadge.png */,
+				BEC9A6422D70A12700C2D716 /* darkDepthsBadge.png */,
+				BEC9A63E2D70A03400C2D716 /* rushGodBadge.png */,
+			);
+			path = Badges;
+			sourceTree = "<group>";
+		};
+		F73814003A1B367D0B2148A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73C260B1438CBDD75D034B2C /* Pods_Compute.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +462,23 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE7CEADB2D64EBEB0047C5F2 /* Build configuration list for PBXNativeTarget "Compute" */;
 			buildPhases = (
+				D98C6EFD8A4B115D1E385C23 /* [CP] Check Pods Manifest.lock */,
 				BE7CEAC32D64EBEA0047C5F2 /* Sources */,
 				BE7CEAC42D64EBEA0047C5F2 /* Frameworks */,
 				BE7CEAC52D64EBEA0047C5F2 /* Resources */,
+				26A4A167B22563E16A94599D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Compute;
+			packageProductDependencies = (
+				BE0D31462D6E24C500C1D99C /* FirebaseAuth */,
+				BE0D31482D6E24C500C1D99C /* FirebaseCore */,
+				BE0D314A2D6E24C500C1D99C /* FirebaseFirestore */,
+				BEAD397F2D80D212000018C5 /* OpenAI */,
+			);
 			productName = Compute;
 			productReference = BE7CEAC72D64EBEA0047C5F2 /* Compute.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +507,10 @@
 				Base,
 			);
 			mainGroup = BE7CEABE2D64EBEA0047C5F2;
+			packageReferences = (
+				BE0D31452D6E24C500C1D99C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				BEAD397E2D80D211000018C5 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
 			productRefGroup = BE7CEAC82D64EBEA0047C5F2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,22 +525,164 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE0D31402D6E01FE00C1D99C /* merchant.png in Resources */,
+				BEC9A65B2D711D4000C2D716 /* deepDiveCornerLight.png in Resources */,
+				BEAD396C2D771015000018C5 /* mathsLogoDark.png in Resources */,
 				BE7CEAD42D64EBEB0047C5F2 /* Assets.xcassets in Resources */,
+				BEC7CA772D65445E007DE945 /* inputCapsuleDark.png in Resources */,
+				BE0D31312D6D3D7600C1D99C /* rushCornerLight.png in Resources */,
+				BEC9A6492D70D87000C2D716 /* mainFrameBadge.png in Resources */,
+				BEC9A64D2D70DBF300C2D716 /* fullMarksBadge.png in Resources */,
+				BE0D315A2D705FE300C1D99C /* thumbsUpLight.png in Resources */,
+				BEAD396D2D771015000018C5 /* mathsLogoLight.png in Resources */,
+				BE0693A32D81D61C00A15327 /* Trophy.png in Resources */,
+				BE7CEAE62D64F1D00047C5F2 /* logoLight.png in Resources */,
+				BE0D313C2D6DCC9C00C1D99C /* levelBannerLight.png in Resources */,
+				BE0649A82D65CDCC00735B5A /* TaskCell.xib in Resources */,
 				BE7CEAD72D64EBEB0047C5F2 /* Base in Resources */,
+				BE0D31332D6D3E0C00C1D99C /* rushCornerDark.png in Resources */,
+				BE0649AB2D65D52200735B5A /* fire.png in Resources */,
+				BEDD46B52D67C79D004DBC47 /* countdownBackgroundDark.png in Resources */,
+				BEC9A64F2D70DC8100C2D716 /* curiousBadge.png in Resources */,
+				BEAD396F2D7788A0000018C5 /* cppLogo.png in Resources */,
+				BEC9A6552D70EE3600C2D716 /* deepDiveTextBoxDark.png in Resources */,
+				BEAD39612D770AB4000018C5 /* difficultyLogoDark.png in Resources */,
+				BE0D314D2D6E26E800C1D99C /* entryScreenLogo.png in Resources */,
+				BE0D312B2D6D18A300C1D99C /* rushResultCornerDark.png in Resources */,
+				BE0649C12D66070200735B5A /* tasksSlideOneAnimated.gif in Resources */,
+				BEDD46B62D67C79D004DBC47 /* countdownBackgroundLight.png in Resources */,
+				BE0D315C2D70616000C1D99C /* wrongCrossLight.png in Resources */,
+				BEC9A6462D70A21200C2D716 /* veteranBadge.png in Resources */,
+				BEC7CA792D654ADC007DE945 /* appIcon.png in Resources */,
+				BEB37BD52D7493F200A5A26D /* leaderboardBackgroundLight.png in Resources */,
+				BEAD395F2D7709F9000018C5 /* dataStructuresDark.png in Resources */,
+				BEC9A64B2D70DB5F00C2D716 /* cryptoBadge.png in Resources */,
+				BEC9A63F2D70A03400C2D716 /* rushGodBadge.png in Resources */,
+				BE7CEAE52D64F1D00047C5F2 /* logoDark.png in Resources */,
+				BEC9A65A2D711D4000C2D716 /* deepDiveCornerDark.png in Resources */,
+				BE0649BD2D66045100735B5A /* tasksInfoDark.png in Resources */,
+				BE7CEAEA2D64F95F0047C5F2 /* lightBulbDark.gif in Resources */,
+				BEAD39652D770E3C000018C5 /* algorithmsLogoDark.png in Resources */,
+				BE0D31272D6D16B400C1D99C /* rushResultClipBoardDark.png in Resources */,
+				BE0649DD2D6672D600735B5A /* tasksSlideThree.png in Resources */,
+				BEAD39712D7788AD000018C5 /* javaLogo.png in Resources */,
+				BE0D31292D6D17BC00C1D99C /* rushResultCornerLight.png in Resources */,
+				BE0D31572D705CB800C1D99C /* wrongAnswer.mp3 in Resources */,
+				BEB37BD32D748BE200A5A26D /* difficultyLogoLight.png in Resources */,
+				BE0649BB2D6602FF00735B5A /* tasksInfoLight.png in Resources */,
+				BE0649D32D6622B800735B5A /* tasksSlideTwo.png in Resources */,
+				BE0D313E2D6DCDCE00C1D99C /* levelBannerDark.png in Resources */,
+				BEC7CA752D65434F007DE945 /* inputCapsuleLight.png in Resources */,
+				BE0649B52D65F7B200735B5A /* profilePictureDark.png in Resources */,
+				BE0649B32D65F5EE00735B5A /* profilePictureLight.png in Resources */,
+				BEAD39692D770F48000018C5 /* dynamicProgrammingDark.png in Resources */,
+				BEAD39592D75D63D000018C5 /* streakCoins.png in Resources */,
 				BE7CEAD22D64EBEA0047C5F2 /* Base in Resources */,
+				BEAD39752D7788BB000018C5 /* rubyLogo.png in Resources */,
+				BE0D31232D6D14E300C1D99C /* rushResultClipBoardLight.png in Resources */,
+				BEC9A6472D70A21200C2D716 /* trenchBadge.png in Resources */,
+				BEC9A6432D70A12700C2D716 /* darkDepthsBadge.png in Resources */,
+				BE0D31442D6E234000C1D99C /* GoogleService-Info.plist in Resources */,
+				BE7CEAE92D64F95F0047C5F2 /* lightBulbLight.gif in Resources */,
+				BE0D31582D705CB800C1D99C /* correctAnswer.mp3 in Resources */,
+				BEAD39772D7CCD4F000018C5 /* leaderboardBackgroundDark.png in Resources */,
+				BEAD39732D7788B4000018C5 /* pythonLogo.png in Resources */,
+				BE0649D52D6622C300735B5A /* tasksSlideOne.png in Resources */,
+				BEAD395B2D770966000018C5 /* dataStructureLight.png in Resources */,
+				BEDD46AA2D6686A2004DBC47 /* ramLowLevel.png in Resources */,
+				BEAD39632D770DF5000018C5 /* algorithmsLogoLight.png in Resources */,
+				BE0649DB2D6671D000735B5A /* water.png in Resources */,
+				BEAD39682D770F48000018C5 /* dynamicProgrammingLight.png in Resources */,
+				BEC9A6542D70EE3600C2D716 /* deepDiveTextBoxLight.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26A4A167B22563E16A94599D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Compute/Pods-Compute-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Compute/Pods-Compute-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Compute/Pods-Compute-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D98C6EFD8A4B115D1E385C23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Compute-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BE7CEAC32D64EBEA0047C5F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE7CEAF02D6502CD0047C5F2 /* LoginViewController.swift in Sources */,
+				BE0D313A2D6D480700C1D99C /* BounceButton.swift in Sources */,
+				BEAD39822D80D240000018C5 /* CodeRushBrain.swift in Sources */,
+				BEAD397B2D809EBA000018C5 /* CodeRushQuestion.swift in Sources */,
 				BE7CEACF2D64EBEA0047C5F2 /* ViewController.swift in Sources */,
+				BEDD46A82D6685C6004DBC47 /* ShopItem.swift in Sources */,
+				BE0649B12D65F16A00735B5A /* QuestionViewController.swift in Sources */,
+				BEA452BA2D82F2A700F277F7 /* UserData.swift in Sources */,
+				BE0649A52D65C73000735B5A /* TabBarController.swift in Sources */,
+				BE7CEAF42D6508A70047C5F2 /* RegisterViewController.swift in Sources */,
+				BE06939B2D81AEE300A15327 /* Activity.swift in Sources */,
+				BE0649C52D66073A00735B5A /* TaskInfoViewController.swift in Sources */,
+				BE0D312D2D6D29A200C1D99C /* RushResultViewController.swift in Sources */,
+				BEAE16CB2D81A0C200383869 /* LLMDelegate.swift in Sources */,
+				BE0649A92D65CDCC00735B5A /* TaskCell.swift in Sources */,
+				BEA452B62D82284900F277F7 /* CodeRushQuestionList.swift in Sources */,
+				BE0649AF2D65EE0700735B5A /* CountDownViewController.swift in Sources */,
 				BE7CEACB2D64EBEA0047C5F2 /* AppDelegate.swift in Sources */,
+				BE7CEAF62D650A680047C5F2 /* ForgotViewController.swift in Sources */,
+				BE0D31422D6E0EEE00C1D99C /* StatsBrain.swift in Sources */,
+				BEDD46A42D66853C004DBC47 /* ShopViewController.swift in Sources */,
+				BEAE16CD2D81A3AF00383869 /* LLMNetwork.swift in Sources */,
+				BEA452B82D82F1A500F277F7 /* TasksBrain.swift in Sources */,
+				BE0649B72D65FC8700735B5A /* AccountViewController.swift in Sources */,
+				BEAD39842D80D35D000018C5 /* LLM.swift in Sources */,
+				BEAD397D2D80A0A3000018C5 /* Response.swift in Sources */,
+				BE0693A12D81D20F00A15327 /* AnalysisViewController.swift in Sources */,
+				BE06939F2D81C50D00A15327 /* DeepDiveBrain.swift in Sources */,
+				BEAD398C2D80DB5D000018C5 /* Token.swift in Sources */,
+				BEC9A6572D711BE100C2D716 /* DeepDiveViewController.swift in Sources */,
+				BE0D31532D6F72EF00C1D99C /* BadgeCollectionViewCell.swift in Sources */,
+				BEC7CA712D65307C007DE945 /* TaskViewController.swift in Sources */,
+				BE0D31512D6F71CC00C1D99C /* BadgeViewController.swift in Sources */,
 				BE7CEACD2D64EBEA0047C5F2 /* SceneDelegate.swift in Sources */,
+				BE0649D92D6632CA00735B5A /* StatsViewController.swift in Sources */,
+				BE7CEAEC2D64FA160047C5F2 /* gifLoader.swift in Sources */,
+				BE0649DF2D667AE600735B5A /* ShopCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +745,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +808,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +829,7 @@
 		};
 		BE7CEADC2D64EBEB0047C5F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4047A20809C9C9A1FB6BA205 /* Pods-Compute.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -298,8 +841,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +858,7 @@
 		};
 		BE7CEADD2D64EBEB0047C5F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D050F5D9BEBE5BA3C9969225 /* Pods-Compute.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,8 +870,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,6 +907,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BE0D31452D6E24C500C1D99C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.8.1;
+			};
+		};
+		BEAD397E2D80D211000018C5 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BE0D31462D6E24C500C1D99C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE0D31452D6E24C500C1D99C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		BE0D31482D6E24C500C1D99C /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE0D31452D6E24C500C1D99C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		BE0D314A2D6E24C500C1D99C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE0D31452D6E24C500C1D99C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		BEAD397F2D80D212000018C5 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEAD397E2D80D211000018C5 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BE7CEABF2D64EBEA0047C5F2 /* Project object */;
 }
