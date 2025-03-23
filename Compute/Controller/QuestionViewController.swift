@@ -59,7 +59,7 @@ class QuestionViewController: UIViewController {
                 timeRemaining.textColor = .orange
                 if (timeLeft == 0) {
                     CodeRushBrain.shared.calculateHighScore()
-                    performSegue(withIdentifier: "goToRushResult", sender: self)
+                    performSegue(withIdentifier: Constants.rushResultSegue, sender: self)
                 }
             }
             timeRemaining.text = "00:\(self.timeLeft)"
@@ -71,7 +71,7 @@ class QuestionViewController: UIViewController {
         
         if (progressView.progress == 1.0) {
             CodeRushBrain.shared.calculateHighScore()
-            performSegue(withIdentifier: "goToRushResult", sender: self)
+            performSegue(withIdentifier: Constants.rushResultSegue, sender: self)
         } else {
             
             remaining += 1

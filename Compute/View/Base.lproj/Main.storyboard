@@ -2587,7 +2587,8 @@
         <designable name="ZpD-z7-MBX"/>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="kRu-rx-2eN"/>
+        <segue reference="Sp6-oC-hAR"/>
+        <segue reference="4Uo-dC-qNh"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Trophy.png" width="150" height="150"/>

@@ -43,7 +43,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
                 if let e = err {
                     self.showAlert(message: e.localizedDescription)
                 } else {
-                    self.performSegue(withIdentifier: "goToMainFromLogin", sender: self)
+                    self.performSegue(withIdentifier: Constants.mainLoginSegue, sender: self)
                 }
             }
         }

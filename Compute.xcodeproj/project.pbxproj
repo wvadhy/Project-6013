@@ -36,6 +36,7 @@
 		BE0D05182D90361900F69E30 /* NIOHTTP1 in Frameworks */ = {isa = PBXBuildFile; productRef = BE0D05172D90361900F69E30 /* NIOHTTP1 */; };
 		BE0D051A2D90385600F69E30 /* HTTPEchoHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D05192D90385600F69E30 /* HTTPEchoHandler.swift */; };
 		BE0D051C2D903A0F00F69E30 /* ConnectTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D051B2D903A0F00F69E30 /* ConnectTo.swift */; };
+		BE0D051E2D904D5600F69E30 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D051D2D904D5600F69E30 /* Constants.swift */; };
 		BE0D31232D6D14E300C1D99C /* rushResultClipBoardLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31222D6D14E300C1D99C /* rushResultClipBoardLight.png */; };
 		BE0D31272D6D16B400C1D99C /* rushResultClipBoardDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31262D6D16B400C1D99C /* rushResultClipBoardDark.png */; };
 		BE0D31292D6D17BC00C1D99C /* rushResultCornerLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31282D6D17BC00C1D99C /* rushResultCornerLight.png */; };
@@ -155,6 +156,7 @@
 		BE0693A22D81D61B00A15327 /* Trophy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trophy.png; sourceTree = "<group>"; };
 		BE0D05192D90385600F69E30 /* HTTPEchoHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPEchoHandler.swift; sourceTree = "<group>"; };
 		BE0D051B2D903A0F00F69E30 /* ConnectTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectTo.swift; sourceTree = "<group>"; };
+		BE0D051D2D904D5600F69E30 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BE0D31222D6D14E300C1D99C /* rushResultClipBoardLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rushResultClipBoardLight.png; sourceTree = "<group>"; };
 		BE0D31262D6D16B400C1D99C /* rushResultClipBoardDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rushResultClipBoardDark.png; path = ../../../../../Downloads/Compute/Assets/rushResultClipBoardDark.png; sourceTree = "<group>"; };
 		BE0D31282D6D17BC00C1D99C /* rushResultCornerLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rushResultCornerLight.png; sourceTree = "<group>"; };
@@ -349,6 +351,7 @@
 				BE30487A2D86573300B6AA2C /* DeepDiveAnalysis.swift */,
 				BE0D05192D90385600F69E30 /* HTTPEchoHandler.swift */,
 				BE0D051B2D903A0F00F69E30 /* ConnectTo.swift */,
+				BE0D051D2D904D5600F69E30 /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -693,6 +696,7 @@
 				BE0D31422D6E0EEE00C1D99C /* StatsBrain.swift in Sources */,
 				BE0D051A2D90385600F69E30 /* HTTPEchoHandler.swift in Sources */,
 				BEDD46A42D66853C004DBC47 /* ShopViewController.swift in Sources */,
+				BE0D051E2D904D5600F69E30 /* Constants.swift in Sources */,
 				BEAE16CD2D81A3AF00383869 /* LLMNetwork.swift in Sources */,
 				BEA452B82D82F1A500F277F7 /* TasksBrain.swift in Sources */,
 				BE0649B72D65FC8700735B5A /* AccountViewController.swift in Sources */,

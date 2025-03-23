@@ -59,16 +59,16 @@ class TaskViewController: UIViewController, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if brain.tasks[indexPath.row].name == "Code rush"{
-            performSegue(withIdentifier: "goToCodeRush", sender: self)
+            performSegue(withIdentifier: Constants.codeRushSegue, sender: self)
         } else if brain.tasks[indexPath.row].name == "Deep dive" {
-            performSegue(withIdentifier: "goToDeepDive", sender: self)
+            performSegue(withIdentifier: Constants.deepDiveSegue, sender: self)
         }
     }
     
     @IBAction func logoutPressed(_ sender: UIBarButtonItem) {
         do {
             try Auth.auth().signOut()
-            performSegue(withIdentifier: "goToStart", sender: self)
+            performSegue(withIdentifier: Constants.startSegue, sender: self)
         } catch let signOutError as NSError {
             print(signOutError)
         }
