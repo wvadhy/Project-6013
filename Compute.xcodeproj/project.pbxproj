@@ -37,6 +37,9 @@
 		BE0D051A2D90385600F69E30 /* HTTPEchoHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D05192D90385600F69E30 /* HTTPEchoHandler.swift */; };
 		BE0D051C2D903A0F00F69E30 /* ConnectTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D051B2D903A0F00F69E30 /* ConnectTo.swift */; };
 		BE0D051E2D904D5600F69E30 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D051D2D904D5600F69E30 /* Constants.swift */; };
+		BE0D05202D90589500F69E30 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D051F2D90589500F69E30 /* Database.swift */; };
+		BE0D05222D905AEB00F69E30 /* SearchBarLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D05212D905AEB00F69E30 /* SearchBarLogic.swift */; };
+		BE0D05242D906DF300F69E30 /* StatsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D05232D906DF300F69E30 /* StatsData.swift */; };
 		BE0D31232D6D14E300C1D99C /* rushResultClipBoardLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31222D6D14E300C1D99C /* rushResultClipBoardLight.png */; };
 		BE0D31272D6D16B400C1D99C /* rushResultClipBoardDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31262D6D16B400C1D99C /* rushResultClipBoardDark.png */; };
 		BE0D31292D6D17BC00C1D99C /* rushResultCornerLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31282D6D17BC00C1D99C /* rushResultCornerLight.png */; };
@@ -157,6 +160,9 @@
 		BE0D05192D90385600F69E30 /* HTTPEchoHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPEchoHandler.swift; sourceTree = "<group>"; };
 		BE0D051B2D903A0F00F69E30 /* ConnectTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectTo.swift; sourceTree = "<group>"; };
 		BE0D051D2D904D5600F69E30 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BE0D051F2D90589500F69E30 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		BE0D05212D905AEB00F69E30 /* SearchBarLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarLogic.swift; sourceTree = "<group>"; };
+		BE0D05232D906DF300F69E30 /* StatsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsData.swift; sourceTree = "<group>"; };
 		BE0D31222D6D14E300C1D99C /* rushResultClipBoardLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rushResultClipBoardLight.png; sourceTree = "<group>"; };
 		BE0D31262D6D16B400C1D99C /* rushResultClipBoardDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rushResultClipBoardDark.png; path = ../../../../../Downloads/Compute/Assets/rushResultClipBoardDark.png; sourceTree = "<group>"; };
 		BE0D31282D6D17BC00C1D99C /* rushResultCornerLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rushResultCornerLight.png; sourceTree = "<group>"; };
@@ -352,6 +358,9 @@
 				BE0D05192D90385600F69E30 /* HTTPEchoHandler.swift */,
 				BE0D051B2D903A0F00F69E30 /* ConnectTo.swift */,
 				BE0D051D2D904D5600F69E30 /* Constants.swift */,
+				BE0D051F2D90589500F69E30 /* Database.swift */,
+				BE0D05212D905AEB00F69E30 /* SearchBarLogic.swift */,
+				BE0D05232D906DF300F69E30 /* StatsData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -678,17 +687,20 @@
 				BE30487B2D86573300B6AA2C /* DeepDiveAnalysis.swift in Sources */,
 				BEAD397B2D809EBA000018C5 /* CodeRushQuestion.swift in Sources */,
 				BE7CEACF2D64EBEA0047C5F2 /* ViewController.swift in Sources */,
+				BE0D05222D905AEB00F69E30 /* SearchBarLogic.swift in Sources */,
 				BEDD46A82D6685C6004DBC47 /* ShopItem.swift in Sources */,
 				BE0D051C2D903A0F00F69E30 /* ConnectTo.swift in Sources */,
 				BE0649B12D65F16A00735B5A /* QuestionViewController.swift in Sources */,
 				BEA452BA2D82F2A700F277F7 /* UserData.swift in Sources */,
 				BE0649A52D65C73000735B5A /* TabBarController.swift in Sources */,
 				BE7CEAF42D6508A70047C5F2 /* RegisterViewController.swift in Sources */,
+				BE0D05202D90589500F69E30 /* Database.swift in Sources */,
 				BE06939B2D81AEE300A15327 /* Activity.swift in Sources */,
 				BE0649C52D66073A00735B5A /* TaskInfoViewController.swift in Sources */,
 				BE0D312D2D6D29A200C1D99C /* RushResultViewController.swift in Sources */,
 				BEAE16CB2D81A0C200383869 /* LLMDelegate.swift in Sources */,
 				BE0649A92D65CDCC00735B5A /* TaskCell.swift in Sources */,
+				BE0D05242D906DF300F69E30 /* StatsData.swift in Sources */,
 				BEA452B62D82284900F277F7 /* CodeRushQuestionList.swift in Sources */,
 				BE0649AF2D65EE0700735B5A /* CountDownViewController.swift in Sources */,
 				BE7CEACB2D64EBEA0047C5F2 /* AppDelegate.swift in Sources */,

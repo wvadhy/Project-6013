@@ -7,23 +7,20 @@ struct UserData {
     var coins: Int = 0
     var rank: Int = 1
     var name: String = ""
-    var db: Firestore = Firestore.firestore()
     
     
-    let user = Auth.auth().currentUser
-    static let shared: UserData = UserData()
+    var user: User?
+    static let shared: UserData = UserData(for: Auth.auth().currentUser!)
     
-    init() {
+    init(for person: User?) {
         print("Creating user data for: \(String(describing: user?.email))")
-        if let user = user {
-            let uid = user.uid
-        }
+        user = person
     }
     
     private mutating func setup() async -> Void {
         
         do {
-            let docRef = db.collection("users").document(user!.uid as String)
+            let docRef = Database.store.collection("users").document(user!.uid as String)
             let document = try await docRef.getDocument()
             if document.exists {
                 let dataDescription = document.data().map(String.init(describing:)) ?? "nil"

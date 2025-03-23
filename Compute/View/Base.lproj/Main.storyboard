@@ -367,7 +367,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cw9-l2-fkO">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cw9-l2-fkO">
                                 <rect key="frame" x="71" y="458" width="250" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -1749,7 +1749,7 @@
                                                 <rect key="frame" x="152" y="136" width="90" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="William Halliday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcb-6p-i9x">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="William Halliday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcb-6p-i9x">
                                                 <rect key="frame" x="114" y="98" width="166" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
@@ -2152,6 +2152,7 @@
                         <outlet property="rankLabel" destination="Ih0-cX-G9t" id="O4t-q3-35T"/>
                         <outlet property="rankView" destination="h1p-wt-8jy" id="mE5-Vm-7HR"/>
                         <outlet property="rateView" destination="DhO-yY-LA5" id="9WZ-YT-Jvd"/>
+                        <outlet property="searchBar" destination="spa-Uh-dRA" id="DMX-q9-Trx"/>
                         <outlet property="streakView" destination="HAK-Xq-tKO" id="Q0T-Dv-d1K"/>
                     </connections>
                 </viewController>
@@ -2587,8 +2588,7 @@
         <designable name="ZpD-z7-MBX"/>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="Sp6-oC-hAR"/>
-        <segue reference="4Uo-dC-qNh"/>
+        <segue reference="oju-z7-wi0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Trophy.png" width="150" height="150"/>

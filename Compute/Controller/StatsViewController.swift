@@ -9,7 +9,7 @@ import Charts
 import UIKit
 import FirebaseAuth
 
-class StatsViewController: UIViewController, ChartViewDelegate {
+class StatsViewController: UIViewController, ChartViewDelegate, UISearchBarDelegate {
     
     @IBOutlet weak var pieView: UIView!
     @IBOutlet weak var streakView: UIView!
@@ -25,10 +25,12 @@ class StatsViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var rankLabel: UILabel!
     @IBOutlet weak var pointsItem: UIBarButtonItem!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var statsBrain: StatsBrain = StatsBrain()
     var coins: Int = UserData.shared.coins
     var rank: Int = UserData.shared.rank
+    var searchLogic: SearchBarLogic = SearchBarLogic()
     
     override func viewDidLoad() {
         
@@ -50,6 +52,7 @@ class StatsViewController: UIViewController, ChartViewDelegate {
         pieChart.delegate = self
         lineChart.delegate = self
         pieGrowthChart.delegate = self
+        searchBar.delegate = self
         
         pieView.addSubview(pieChart)
         growthRateView.addSubview(lineChart)
@@ -64,6 +67,22 @@ class StatsViewController: UIViewController, ChartViewDelegate {
         } catch let signOutError as NSError {
             print(signOutError)
         }
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print("Search clicked!")
+        Task {
+            let user: StatsData = await searchLogic.resolveQuery(for: searchBar.text ?? "None")
+            if (user.validated) {
+                updateStats(with: user)
+            }
+            searchBar.endEditing(true)
+        }
+    }
+    
+    func updateStats(with data: StatsData) {
+        rankLabel.text = "\(data.rank)"
+        nameLabel.text = data.name
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
