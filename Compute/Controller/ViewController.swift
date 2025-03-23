@@ -21,6 +21,8 @@ class ViewController: UIViewController {
         titleLabel.text = "Compute."
 
         lightBulb.image = checkMode()
+        
+        LLM.ai
     }
     
     func checkMode() -> UIImage {

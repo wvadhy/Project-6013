@@ -23,17 +23,19 @@ class LLM: LLMDelegate {
     public func getCodeRush(for lang: String) async throws -> ChatResult {
         let query = ChatQuery(messages: [.system(.init(content: "10 \(lang) questions"))],
                               model: .gpt4_o,
-                              responseFormat: .jsonSchema(name: "movie-info", type: CodeRushQuestionList.self))
+                              responseFormat: .jsonSchema(name: "crql", type: CodeRushQuestionList.self))
         return try await model.chats(query: query)
     }
     
     public func getDeepDive(for lang: String) async throws -> ChatResult {
-        let query = ChatQuery(messages: [.init(role: .user, content: "Give me a \(lang) code snippet which needs to be refactored and no other text as raw text with no markups, no highlighting, no backticks")!], model: .gpt4_o)
+        let query = ChatQuery(messages: [.init(role: .user, content: "Give me a \(lang) erroneous code snippet which needs to be fixed and no other text as raw text with no markups, no highlighting, no backticks")!], model: .gpt4_o)
         return try await model.chats(query: query)
     }
     
     public func analyseDeepDive(for lang: String, with code: String) async throws -> ChatResult {
-        let query = ChatQuery(messages: [.init(role: .user, content: "Please give me feedback for this \(lang) code snippet and no other text as raw text with no markups, no highlighting, no backticks: \(code)")!], model: .gpt4_o)
+        let query = ChatQuery(messages: [.system(.init(content: "Give brief feedback and a score out of 100 for this \(lang) code: \(code)"))],
+                              model: .gpt4_o,
+                              responseFormat: .jsonSchema(name: "ddas", type: DeepDiveAnalysis.self))
         return try await model.chats(query: query)
     }
 

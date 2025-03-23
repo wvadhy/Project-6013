@@ -35,9 +35,9 @@ struct StatsBrain {
         
         pieChart.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
         
-        entries.append(ChartDataEntry(x: Double(CodeRushBrain.shared.totalCorrect), y: Double(CodeRushBrain.shared.totalCorrect)))
-        entries.append(ChartDataEntry(x: Double(CodeRushBrain.shared.totalCorrect) - Double(CodeRushBrain.shared.totalCorrect),
-                                      y: Double(CodeRushBrain.shared.totalCorrect) - Double(CodeRushBrain.shared.totalCorrect)))
+        entries.append(ChartDataEntry(x: Double(CodeRushBrain.shared.calculateTotalCorrect()), y: Double(CodeRushBrain.shared.calculateTotalCorrect())))
+        entries.append(ChartDataEntry(x: Double(CodeRushBrain.shared.calculateTotalCorrect()) - Double(CodeRushBrain.shared.calculateTotalCorrect()),
+                                      y: Double(CodeRushBrain.shared.calculateTotalCorrect()) - Double(CodeRushBrain.shared.calculateTotalCorrect())))
         
         let set = PieChartDataSet(entries: entries)
         set.colors = [.mainColour, .accent]

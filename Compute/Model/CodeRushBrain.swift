@@ -9,21 +9,12 @@ struct CodeRushBrain {
     var initProg: Float = 0.0
     var copyProg: Float = 0.0
     var correct = 0
-    var totalCorrect = 0
-    var totalTotal = 0
     var total = 0
-    var highScore = 0
-    var scores: [Int] = [0]
-    var average: Double = 0.0
-    
-    let numQuestions = 10
-    let url = URL(string: "https://computex.cloud/data/api.json")!
-    let llm: LLM
+    var numQuestions = 10
     
     init() {
         self.initProg = 1.0 / Float(numQuestions)
         self.copyProg = initProg
-        llm = LLM()
     }
     
     mutating func pressed(_ text: String) -> Float {
@@ -34,7 +25,7 @@ struct CodeRushBrain {
     mutating func getQuestions(for lang: String) async -> [CodeRushQuestion] {
         do {
             print("Getting questions...")
-            let result = try await llm.getCodeRush(for: lang)
+            let result = try await LLM.ai.getCodeRush(for: lang)
             
             print("Converting to JSON...")
             
@@ -56,16 +47,14 @@ struct CodeRushBrain {
     
     mutating func goodAnswer() -> Void { correct += 1 }
     
-    mutating func calculateAverage() -> Double { return Double(scores.reduce(0, +) / scores.count) }
+    func calculateAverage() -> Double { return /*Double(scores.reduce(0, +) / scores.count)*/ 0.1 }
     
-    mutating func calculateHighScore() -> Void {
-        scores.append(correct)
-        totalCorrect += correct
-        totalTotal += total
-        if (correct > highScore) {
-            highScore = correct
-        }
-    }
+    func calculateHighScore() -> Int { return 1 }
+    
+    func calculateTotalCorrect() -> Int { return 1 }
+    
+    func calculateTotalIncorrect() -> Int { return 1 }
+    
     
     mutating func feedback() -> String {
         if (correct > 5) {

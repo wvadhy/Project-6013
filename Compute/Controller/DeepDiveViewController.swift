@@ -21,17 +21,17 @@ class DeepDiveViewController: UIViewController {
         super.viewDidLoad()
         
         codeView.customView(setup: true)
-        view.setGradientBackground(colorTop: .white, colorBottom: .mainColour)
+        view.setGradientBackground(colorTop: .white, colorBottom: UIColor(red: 242, green: 239, blue: 231, alpha: 1))
         
         let textStorage = CodeAttributedString()
-        textStorage.language = "Python"
+        textStorage.language = language
         let layoutManager = NSLayoutManager()
         textStorage.addLayoutManager(layoutManager)
 
         let textContainer = NSTextContainer(size: view.bounds.size)
         layoutManager.addTextContainer(textContainer)
 
-        textView = UITextView(frame: CGRect(x: 8, y: 8, width: 304, height: 304), textContainer: textContainer)
+        textView = UITextView(frame: CGRect(x: 8, y: 8, width: 304, height: 460), textContainer: textContainer)
         
         textView.autocorrectionType = .no
         textView.autocapitalizationType = .none

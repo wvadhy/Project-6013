@@ -90,11 +90,9 @@ class TaskViewController: UIViewController, UITableViewDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "goToDeepDive") {
-            DeepDiveBrain.shared
             let destinationVC = segue.destination as? DeepDiveViewController
             destinationVC?.language = language
         } else {
-            CodeRushBrain.shared
             let destinationVC = segue.destination as? CountDownViewController
             destinationVC?.language = language
         }

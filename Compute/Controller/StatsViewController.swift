@@ -34,7 +34,7 @@ class StatsViewController: UIViewController, ChartViewDelegate {
         
         super.viewDidLoad()
             
-        codeRushHighScore.text = String(CodeRushBrain.shared.highScore)
+        codeRushHighScore.text = String(CodeRushBrain.shared.calculateHighScore())
         
         codeRushAverage.text = String(CodeRushBrain.shared.calculateAverage())
         
