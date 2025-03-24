@@ -8,9 +8,9 @@ struct CodeRushBrain {
     
     var initProg: Float = 0.0
     var copyProg: Float = 0.0
-    var correct = 0
-    var total = 0
-    var numQuestions = 10
+    var correct: Int = 0
+    var total: Int = 0
+    var numQuestions: Int = 10
     
     init() {
         self.initProg = 1.0 / Float(numQuestions)

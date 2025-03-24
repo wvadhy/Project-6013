@@ -3,9 +3,9 @@ import Charts
 
 struct StatsBrain {
     
-    var entries = [ChartDataEntry]()
-    var barEntries = [BarChartDataEntry]()
-    var chartEntries = [ChartDataEntry]()
+    var entries: [ChartDataEntry] = [ChartDataEntry]()
+    var barEntries: [BarChartDataEntry] = [BarChartDataEntry]()
+    var chartEntries: [ChartDataEntry] = [ChartDataEntry]()
     
     mutating func createLineChart() -> LineChartView {
         
