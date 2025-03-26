@@ -3,13 +3,13 @@ import OpenAI
 
 struct DeepDiveAnalysis: StructuredOutput {
     
-    let analysis: String
-    let score: Int
+    let positive: String
+    let negative: String
     
     static let example: Self = {
         .init(
-            analysis: "The code was not well structured and presented some logical errors impairing functionality",
-            score: 18
+            positive: "The code showcased good understanding of the language and semantics with no clear logical errors",
+            negative: "The code was not well structured and is too long"
         )
     }()
 }

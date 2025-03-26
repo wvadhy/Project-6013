@@ -4,37 +4,39 @@ import FirebaseAuth
 
 struct UserData {
     
-    var coins: Int = 0
-    var rank: Int = 1
-    var name: String = ""
-    
-    
     var user: User?
-    static let shared: UserData = UserData(for: Auth.auth().currentUser!)
+    
+    
+    static var shared: UserData = UserData(for: Auth.auth().currentUser!)
     
     init(for person: User?) {
-        print("Creating user data for: \(String(describing: user?.email))")
+        print("Creating user data for: \(String(describing: person?.email))")
         user = person
     }
     
-    private mutating func setup() async -> Void {
-        
+    public func query(for name: String) async -> String {
         do {
             let docRef = Database.store.collection("users").document(user!.uid as String)
             let document = try await docRef.getDocument()
+            let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
             if document.exists {
-                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
-                coins = document.data()?["points"] as! Int
-                rank = document.data()?["rank"] as! Int
-                name = document.data()?["name"] as! String
-                print(name)
-                print("Document data: \(dataDescription)")
+                if var item = document.data()?[name] {
+                    if item is Int {
+                        item = item as! Int
+                    } else if item is Double {
+                        item = item as! Double
+                    }
+                    return "\(item)"
+                } else {
+                    print("Data does not exist for document: \(dataDescription)")
+                }
             } else {
                 print("Document does not exist for user: \(user!.uid)")
             }
         } catch {
             print("Error getting documents: \(error)")
         }
+        return ""
     }
     
 }

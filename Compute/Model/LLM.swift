@@ -33,9 +33,9 @@ class LLM: LLMDelegate {
     }
     
     public func analyseDeepDive(for lang: String, with code: String) async throws -> ChatResult {
-        let query = ChatQuery(messages: [.system(.init(content: "Give brief feedback and a score out of 100 for this \(lang) code: \(code)"))],
+        let query = ChatQuery(messages: [.system(.init(content: "Give 5 positives and negatives and a score for this \(lang) code: \(code)"))],
                               model: .gpt4_o,
-                              responseFormat: .jsonSchema(name: "ddas", type: DeepDiveAnalysis.self))
+                              responseFormat: .jsonSchema(name: "ddas", type: DeepDiveAnalysisList.self))
         return try await model.chats(query: query)
     }
 

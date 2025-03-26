@@ -46,7 +46,9 @@ class AccountViewController: UIViewController {
             let email = user.email
         }
         emailLabel.text = (user?.email)!
-        nameLabel.text = UserData.shared.name
+        Task {
+            nameLabel.text = await UserData.shared.query(for: "name")
+        }
     }
     
     

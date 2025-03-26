@@ -58,7 +58,6 @@ class QuestionViewController: UIViewController {
             if (timeLeft < 10) {
                 timeRemaining.textColor = .orange
                 if (timeLeft == 0) {
-                    CodeRushBrain.shared.calculateHighScore()
                     performSegue(withIdentifier: Constants.rushResultSegue, sender: self)
                 }
             }
@@ -70,7 +69,6 @@ class QuestionViewController: UIViewController {
     func generateNewPage(at index: Int){
         
         if (progressView.progress == 1.0) {
-            CodeRushBrain.shared.calculateHighScore()
             performSegue(withIdentifier: Constants.rushResultSegue, sender: self)
         } else {
             

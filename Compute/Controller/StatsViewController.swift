@@ -25,24 +25,32 @@ class StatsViewController: UIViewController, ChartViewDelegate, UISearchBarDeleg
     @IBOutlet weak var rankLabel: UILabel!
     @IBOutlet weak var pointsItem: UIBarButtonItem!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var learningTimeLabel: UILabel!
+    @IBOutlet weak var tasksCompletedLabel: UILabel!
+    @IBOutlet weak var totalPointsButton: UIButton!
+    
+    
     @IBOutlet weak var searchBar: UISearchBar!
     
     var statsBrain: StatsBrain = StatsBrain()
-    var coins: Int = UserData.shared.coins
-    var rank: Int = UserData.shared.rank
     var searchLogic: SearchBarLogic = SearchBarLogic()
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        Task {
+            let points = await UserData.shared.query(for: "pointsTotal")
+            let gold = await UserData.shared.query(for: "gold")
+            rankLabel.text = await UserData.shared.query(for: "rank")
+            pointsItem.title = "£\(gold)"
+            nameLabel.text = await UserData.shared.query(for: "name")
+            tasksCompletedLabel.text = await UserData.shared.query(for: "totalGamesPlayed")
+            totalPointsButton.setTitle("\(points) total points", for: .normal)
             
-        codeRushHighScore.text = String(CodeRushBrain.shared.calculateHighScore())
-        
-        codeRushAverage.text = String(CodeRushBrain.shared.calculateAverage())
-        
-        rankLabel.text = "\(rank)"
-        pointsItem.title = "₡ \(coins)"
-        nameLabel.text = UserData.shared.name
+            codeRushHighScore.text = await CodeRushBrain.shared.getHighScore()
+            codeRushAverage.text = await CodeRushBrain.shared.getAverage()
+        }
         
         let barChart = statsBrain.createBarChart()
         let pieChart = statsBrain.createPieChart()
@@ -61,7 +69,7 @@ class StatsViewController: UIViewController, ChartViewDelegate, UISearchBarDeleg
         setupViews(setup: true)
     }
     
-    @IBAction func logoutButtonPressed(_ sender: UIBarButtonItem) {
+    @IBAction func logoutButtonPressed(_ sender: UIBarButtonItem) -> Void {
         do {
             try Auth.auth().signOut()
         } catch let signOutError as NSError {
@@ -69,7 +77,7 @@ class StatsViewController: UIViewController, ChartViewDelegate, UISearchBarDeleg
         }
     }
     
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) -> Void {
         print("Search clicked!")
         Task {
             let user: StatsData = await searchLogic.resolveQuery(for: searchBar.text ?? "None")
@@ -80,12 +88,12 @@ class StatsViewController: UIViewController, ChartViewDelegate, UISearchBarDeleg
         }
     }
     
-    func updateStats(with data: StatsData) {
+    func updateStats(with data: StatsData) -> Void {
         rankLabel.text = "\(data.rank)"
         nameLabel.text = data.name
     }
     
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) -> Void {
         setupViews(setup: false)
     }
     
@@ -106,7 +114,7 @@ extension UIView {
         case small = 0.4, normal = 2, big = 15
     }
 
-    func doGlowAnimation(withColor color: UIColor, withEffect effect: GlowEffect = .normal) {
+    func doGlowAnimation(withColor color: UIColor, withEffect effect: GlowEffect = .normal) -> Void {
         layer.masksToBounds = false
         layer.shadowColor = color.cgColor
         layer.shadowRadius = .zero
@@ -124,7 +132,7 @@ extension UIView {
         layer.add(glowAnimation, forKey: "shadowGlowingAnimation")
     }
     
-  func dropShadow(color: UIColor, opacity: Float = 1, offSet: CGSize, radius: CGFloat = 4, scale: Bool = true) {
+  func dropShadow(color: UIColor, opacity: Float = 1, offSet: CGSize, radius: CGFloat = 4, scale: Bool = true) -> Void {
     layer.masksToBounds = false
     layer.shadowColor = color.cgColor
     layer.shadowOpacity = opacity
@@ -136,7 +144,7 @@ extension UIView {
     layer.rasterizationScale = scale ? UIScreen.main.scale : 1
   }
     
-  func setGradientBackground(colorTop: UIColor, colorBottom: UIColor) {
+  func setGradientBackground(colorTop: UIColor, colorBottom: UIColor) -> Void {
     let gradientLayer = CAGradientLayer()
     gradientLayer.colors = [colorBottom.cgColor, colorTop.cgColor]
     gradientLayer.startPoint = CGPoint(x: 0.5, y: 1.0)
@@ -148,7 +156,7 @@ extension UIView {
   }
     
   func customView(setup valid: Bool = false, color bgc: UIColor = .mainColour) -> Void {
-      if (valid == true){
+      if (valid == true) {
           layer.cornerRadius = 10
           layer.masksToBounds = true
       }

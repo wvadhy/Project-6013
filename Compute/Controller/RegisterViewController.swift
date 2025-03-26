@@ -26,15 +26,58 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                 if let e = err {
                     self.showAlert(message: e.localizedDescription)
                 } else {
+                    UserData.shared
                     Task {
                         do {
-                          let ref = try await db.collection("users").addDocument(data: [
+                            let ref = try await db.collection("users").document(UserData.shared.user!.uid).setData([
                             "name": nameTextField.text!,
                             "email": email,
-                            "points": 0,
+                            "gold": 0,
+                            "pointsTotal": 0,
+                            "totalGamesPlayed": 1,
+                            "codeRushPlayed": 1,
+                            "codeRushHighScore": 0,
+                            "codeRushCorrect": 0,
+                            "codeRushAverage": 0.0,
+                            "codeRushTotal": 0,
+                            "deepDivePlayed": 1,
+                            "deepDiveHighScore": 0,
+                            "deepDiveCorrect": 0,
+                            "deepDiveAverage": 0.0,
+                            "deepDiveTotal": 0,
+                            "codeRushAverageRuby": 0.0,
+                            "codeRushTotalRuby": 0,
+                            "deepDiveAverageRuby": 0.0,
+                            "deepDiveTotalRuby": 0,
+                            "codeRushAverageCpp": 0.0,
+                            "codeRushTotalCpp": 0,
+                            "deepDiveAverageCpp": 0.0,
+                            "deepDiveTotalCpp": 0,
+                            "codeRushAverageJava": 0.0,
+                            "codeRushTotalJava": 0,
+                            "deepDiveAverageJava": 0.0,
+                            "deepDiveTotalJava": 0,
+                            "codeRushAverageLua": 0.0,
+                            "codeRushTotalLua": 0,
+                            "deepDiveAverageLua": 0.0,
+                            "deepDiveTotalLua": 0,
+                            "codeRushAveragePython": 0.0,
+                            "codeRushTotalPython": 0,
+                            "deepDiveAveragePython": 0.0,
+                            "deepDiveTotalPython": 0,
+                            "codeRushAverageJs": 0.0,
+                            "codeRushTotalJs": 0,
+                            "deepDiveAverageJs": 0.0,
+                            "deepDiveTotalJs": 0,
+                            "pythonScore": 0,
+                            "rubyScore": 0,
+                            "cppScore": 0,
+                            "javaScore": 0,
+                            "jsScore": 0,
+                            "luaScore": 0,
                             "rank": 0
                           ])
-                          print("Document added with ID: \(ref.documentID)")
+                            print("Document added with ID: \(UserData.shared.user!.uid)")
                         } catch {
                           print("Error adding document: \(error)")
                         }
@@ -65,5 +108,5 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     @IBAction func backPressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
-    
+
 }

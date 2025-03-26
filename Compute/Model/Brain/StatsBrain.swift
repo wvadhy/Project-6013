@@ -2,12 +2,10 @@ import Foundation
 import Charts
 
 struct StatsBrain {
-    
-    var entries: [ChartDataEntry] = [ChartDataEntry]()
-    var barEntries: [BarChartDataEntry] = [BarChartDataEntry]()
-    var chartEntries: [ChartDataEntry] = [ChartDataEntry]()
-    
-    mutating func createLineChart() -> LineChartView {
+        
+    func createLineChart() -> LineChartView {
+        
+        var chartEntries: [ChartDataEntry] = [ChartDataEntry]()
         
         let lineChart = LineChartView()
         
@@ -29,29 +27,35 @@ struct StatsBrain {
         return lineChart
     }
     
-    mutating func createPieChart() -> PieChartView {
+    func createPieChart() -> PieChartView {
+        
+        var entries: [ChartDataEntry] = [ChartDataEntry]()
         
         let pieChart = PieChartView()
         
         pieChart.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
         
-        entries.append(ChartDataEntry(x: Double(CodeRushBrain.shared.calculateTotalCorrect()), y: Double(CodeRushBrain.shared.calculateTotalCorrect())))
-        entries.append(ChartDataEntry(x: Double(CodeRushBrain.shared.calculateTotalCorrect()) - Double(CodeRushBrain.shared.calculateTotalCorrect()),
-                                      y: Double(CodeRushBrain.shared.calculateTotalCorrect()) - Double(CodeRushBrain.shared.calculateTotalCorrect())))
-        
-        let set = PieChartDataSet(entries: entries)
-        set.colors = [.mainColour, .accent]
-        let data = PieChartData(dataSet: set)
-        
-        pieChart.legendRenderer.legend?.enabled = false
-        data.setDrawValues(false)
-        
-        pieChart.data = data
+//        let correct = await CodeRushBrain.shared.getTotalCorrect()
+//        let total = await CodeRushBrain.shared.getTotal()
+//        entries.append(ChartDataEntry(x: Double(correct)!, y: Double(correct)!))
+//        entries.append(ChartDataEntry(x: Double(total)! - Double(correct)!,
+//                                      y: Double(total)! - Double(correct)!))
+//        
+//        let set = PieChartDataSet(entries: entries)
+//        set.colors = [.mainColour, .accent]
+//        let data = PieChartData(dataSet: set)
+//        
+//        await pieChart.legendRenderer.legend?.enabled = false
+//        data.setDrawValues(false)
+//        
+//        pieChart.data = data
         
         return pieChart
     }
     
-    mutating func createBarChart() -> BarChartView {
+    func createBarChart() -> BarChartView {
+        
+        var barEntries: [BarChartDataEntry] = [BarChartDataEntry]()
         
         let barChart = BarChartView()
         

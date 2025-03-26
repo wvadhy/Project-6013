@@ -23,17 +23,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
         passwordTextField.delegate = self
         emailTextField.delegate = self
         
-        Task {
-            do {
-              let snapshot = try await db.collection("users").getDocuments()
-              for document in snapshot.documents {
-                print("\(document.documentID) => \(document.data())")
-              }
-            } catch {
-              print("Error getting documents: \(error)")
-            }
-        }
-        
     }
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {

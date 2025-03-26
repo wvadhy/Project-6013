@@ -17,7 +17,7 @@ struct DeepDiveBrain {
         }
     }
     
-    func analyseAnswer(for lang: String, with code: String) async -> [DeepDiveAnalysis] {
+    func analyseAnswer(for lang: String, with code: String) async -> DeepDiveAnalysisList {
         do {
             print("Getting analysis...")
             
@@ -29,12 +29,12 @@ struct DeepDiveBrain {
             
             print("Parsing data...")
             
-            let toParse = try JSONDecoder().decode(DeepDiveAnalysis.self, from: json!)
+            let toParse = try JSONDecoder().decode(DeepDiveAnalysisList.self, from: json!)
             
-            return [toParse]
+            return toParse
         } catch {
             print("Error: \(error)")
-            return []
+            return DeepDiveAnalysisList(analysis: [], score: 0)
         }
     }
     

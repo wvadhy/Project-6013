@@ -20,8 +20,12 @@ class RushResultViewController: UIViewController {
         overviewView.customView(setup: true)
         rankView.customView(setup: true)
         
-        scoreLabel.text = "\(CodeRushBrain.shared.correct)/\(CodeRushBrain.shared.total)"
-        feedbackLabel.text = CodeRushBrain.shared.feedback()
+        scoreLabel.text = "\(CodeRushBrain.shared.correct)"
+        feedbackLabel.text = ""
+        
+        Task {
+            await CodeRushBrain.shared.updateEntries()
+        }
     }
 
 }

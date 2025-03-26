@@ -25,15 +25,17 @@ class TaskViewController: UIViewController, UITableViewDelegate {
     
     var language: String = "Python"
     var brain: TasksBrain = TasksBrain()
-    var coins: Int = UserData.shared.coins
 
     override func viewDidLoad() {
         
+        UserData.shared
         taskTableView.dataSource = self
         taskTableView.delegate = self
         taskTableView.register(UINib(nibName: "TaskCell", bundle: nil), forCellReuseIdentifier: "Tony")
         
-        pointsItem.title = "₡ \(coins)"
+        Task {
+            pointsItem.title = await UserData.shared.query(for: "gold")
+        }
         
         checkMode()
             

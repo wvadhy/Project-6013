@@ -40,6 +40,14 @@
 		BE0D05202D90589500F69E30 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D051F2D90589500F69E30 /* Database.swift */; };
 		BE0D05222D905AEB00F69E30 /* SearchBarLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D05212D905AEB00F69E30 /* SearchBarLogic.swift */; };
 		BE0D05242D906DF300F69E30 /* StatsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D05232D906DF300F69E30 /* StatsData.swift */; };
+		BE0D05282D91CA5E00F69E30 /* leaderboardSlideOne.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D05272D91CA5E00F69E30 /* leaderboardSlideOne.png */; };
+		BE0D052A2D91CAA800F69E30 /* LeaderboardInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D05292D91CAA800F69E30 /* LeaderboardInfoViewController.swift */; };
+		BE0D052C2D91CCD200F69E30 /* leaderboardSlideTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D052B2D91CCD200F69E30 /* leaderboardSlideTwo.png */; };
+		BE0D052E2D91CE3A00F69E30 /* StatsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D052D2D91CE3A00F69E30 /* StatsInfoViewController.swift */; };
+		BE0D05302D91CFFE00F69E30 /* statsInfoSlideOne.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D052F2D91CFFE00F69E30 /* statsInfoSlideOne.png */; };
+		BE0D05322D91D08100F69E30 /* statsInfoSlideTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D05312D91D08100F69E30 /* statsInfoSlideTwo.png */; };
+		BE0D05342D92E54200F69E30 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D05332D92E54200F69E30 /* FeedbackViewController.swift */; };
+		BE0D05362D934DF500F69E30 /* DeepDiveAnalysisList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D05352D934DF500F69E30 /* DeepDiveAnalysisList.swift */; };
 		BE0D31232D6D14E300C1D99C /* rushResultClipBoardLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31222D6D14E300C1D99C /* rushResultClipBoardLight.png */; };
 		BE0D31272D6D16B400C1D99C /* rushResultClipBoardDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31262D6D16B400C1D99C /* rushResultClipBoardDark.png */; };
 		BE0D31292D6D17BC00C1D99C /* rushResultCornerLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31282D6D17BC00C1D99C /* rushResultCornerLight.png */; };
@@ -163,6 +171,14 @@
 		BE0D051F2D90589500F69E30 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		BE0D05212D905AEB00F69E30 /* SearchBarLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarLogic.swift; sourceTree = "<group>"; };
 		BE0D05232D906DF300F69E30 /* StatsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsData.swift; sourceTree = "<group>"; };
+		BE0D05272D91CA5E00F69E30 /* leaderboardSlideOne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaderboardSlideOne.png; sourceTree = "<group>"; };
+		BE0D05292D91CAA800F69E30 /* LeaderboardInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardInfoViewController.swift; sourceTree = "<group>"; };
+		BE0D052B2D91CCD200F69E30 /* leaderboardSlideTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaderboardSlideTwo.png; sourceTree = "<group>"; };
+		BE0D052D2D91CE3A00F69E30 /* StatsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsInfoViewController.swift; sourceTree = "<group>"; };
+		BE0D052F2D91CFFE00F69E30 /* statsInfoSlideOne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statsInfoSlideOne.png; sourceTree = "<group>"; };
+		BE0D05312D91D08100F69E30 /* statsInfoSlideTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statsInfoSlideTwo.png; sourceTree = "<group>"; };
+		BE0D05332D92E54200F69E30 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		BE0D05352D934DF500F69E30 /* DeepDiveAnalysisList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveAnalysisList.swift; sourceTree = "<group>"; };
 		BE0D31222D6D14E300C1D99C /* rushResultClipBoardLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rushResultClipBoardLight.png; sourceTree = "<group>"; };
 		BE0D31262D6D16B400C1D99C /* rushResultClipBoardDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rushResultClipBoardDark.png; path = ../../../../../Downloads/Compute/Assets/rushResultClipBoardDark.png; sourceTree = "<group>"; };
 		BE0D31282D6D17BC00C1D99C /* rushResultCornerLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rushResultCornerLight.png; sourceTree = "<group>"; };
@@ -281,6 +297,28 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BE0D05252D9097AF00F69E30 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE16CA2D81A0C200383869 /* LLMDelegate.swift */,
+				BEAE16CC2D81A3AF00383869 /* LLMNetwork.swift */,
+				BE0D05192D90385600F69E30 /* HTTPEchoHandler.swift */,
+				BE0D051B2D903A0F00F69E30 /* ConnectTo.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BE0D05262D9097D600F69E30 /* Brain */ = {
+			isa = PBXGroup;
+			children = (
+				BE0D31412D6E0EEE00C1D99C /* StatsBrain.swift */,
+				BEAD39812D80D240000018C5 /* CodeRushBrain.swift */,
+				BE06939E2D81C50D00A15327 /* DeepDiveBrain.swift */,
+				BEA452B72D82F1A400F277F7 /* TasksBrain.swift */,
+			);
+			path = Brain;
+			sourceTree = "<group>";
+		};
 		BE0D31382D6D47EE00C1D99C /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,28 +377,23 @@
 		BE7CEADE2D64EBF50047C5F2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BE0D05262D9097D600F69E30 /* Brain */,
+				BE0D05252D9097AF00F69E30 /* Network */,
 				BE7CEAEB2D64FA160047C5F2 /* gifLoader.swift */,
 				BEDD46A72D6685C6004DBC47 /* ShopItem.swift */,
-				BE0D31412D6E0EEE00C1D99C /* StatsBrain.swift */,
 				BEAD397A2D809EBA000018C5 /* CodeRushQuestion.swift */,
 				BEAD397C2D80A0A3000018C5 /* Response.swift */,
-				BEAD39812D80D240000018C5 /* CodeRushBrain.swift */,
 				BEAD39832D80D35D000018C5 /* LLM.swift */,
 				BEAD398B2D80DB5D000018C5 /* Token.swift */,
-				BEAE16CA2D81A0C200383869 /* LLMDelegate.swift */,
-				BEAE16CC2D81A3AF00383869 /* LLMNetwork.swift */,
 				BE06939A2D81AEE300A15327 /* Activity.swift */,
-				BE06939E2D81C50D00A15327 /* DeepDiveBrain.swift */,
 				BEA452B52D82284900F277F7 /* CodeRushQuestionList.swift */,
-				BEA452B72D82F1A400F277F7 /* TasksBrain.swift */,
 				BEA452B92D82F2A700F277F7 /* UserData.swift */,
 				BE30487A2D86573300B6AA2C /* DeepDiveAnalysis.swift */,
-				BE0D05192D90385600F69E30 /* HTTPEchoHandler.swift */,
-				BE0D051B2D903A0F00F69E30 /* ConnectTo.swift */,
 				BE0D051D2D904D5600F69E30 /* Constants.swift */,
 				BE0D051F2D90589500F69E30 /* Database.swift */,
 				BE0D05212D905AEB00F69E30 /* SearchBarLogic.swift */,
 				BE0D05232D906DF300F69E30 /* StatsData.swift */,
+				BE0D05352D934DF500F69E30 /* DeepDiveAnalysisList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -396,6 +429,9 @@
 				BE0D31502D6F71CC00C1D99C /* BadgeViewController.swift */,
 				BEC9A6562D711BE100C2D716 /* DeepDiveViewController.swift */,
 				BE0693A02D81D20F00A15327 /* AnalysisViewController.swift */,
+				BE0D05292D91CAA800F69E30 /* LeaderboardInfoViewController.swift */,
+				BE0D052D2D91CE3A00F69E30 /* StatsInfoViewController.swift */,
+				BE0D05332D92E54200F69E30 /* FeedbackViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -403,6 +439,9 @@
 		BE7CEAE22D64F1C30047C5F2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BE0D05312D91D08100F69E30 /* statsInfoSlideTwo.png */,
+				BE0D052F2D91CFFE00F69E30 /* statsInfoSlideOne.png */,
+				BE0D052B2D91CCD200F69E30 /* leaderboardSlideTwo.png */,
 				BEA1D44B2D89AF9F00DE1F17 /* loading.gif */,
 				BE0693A22D81D61B00A15327 /* Trophy.png */,
 				BEAD39762D7CCD4E000018C5 /* leaderboardBackgroundDark.png */,
@@ -439,6 +478,7 @@
 				BE0D31262D6D16B400C1D99C /* rushResultClipBoardDark.png */,
 				BE0D31222D6D14E300C1D99C /* rushResultClipBoardLight.png */,
 				BEDD46B32D67C79D004DBC47 /* countdownBackgroundDark.png */,
+				BE0D05272D91CA5E00F69E30 /* leaderboardSlideOne.png */,
 				BEDD46B42D67C79D004DBC47 /* countdownBackgroundLight.png */,
 				BEDD46A92D6686A2004DBC47 /* ramLowLevel.png */,
 				BE0649DC2D6672D600735B5A /* tasksSlideThree.png */,
@@ -569,6 +609,7 @@
 				BEC9A64D2D70DBF300C2D716 /* fullMarksBadge.png in Resources */,
 				BE0D315A2D705FE300C1D99C /* thumbsUpLight.png in Resources */,
 				BEAD396D2D771015000018C5 /* mathsLogoLight.png in Resources */,
+				BE0D052C2D91CCD200F69E30 /* leaderboardSlideTwo.png in Resources */,
 				BE0693A32D81D61C00A15327 /* Trophy.png in Resources */,
 				BE7CEAE62D64F1D00047C5F2 /* logoLight.png in Resources */,
 				BE0D313C2D6DCC9C00C1D99C /* levelBannerLight.png in Resources */,
@@ -584,6 +625,7 @@
 				BE0D314D2D6E26E800C1D99C /* entryScreenLogo.png in Resources */,
 				BE0D312B2D6D18A300C1D99C /* rushResultCornerDark.png in Resources */,
 				BE0649C12D66070200735B5A /* tasksSlideOneAnimated.gif in Resources */,
+				BE0D05322D91D08100F69E30 /* statsInfoSlideTwo.png in Resources */,
 				BEDD46B62D67C79D004DBC47 /* countdownBackgroundLight.png in Resources */,
 				BE0D315C2D70616000C1D99C /* wrongCrossLight.png in Resources */,
 				BEC9A6462D70A21200C2D716 /* veteranBadge.png in Resources */,
@@ -605,6 +647,7 @@
 				BEB37BD32D748BE200A5A26D /* difficultyLogoLight.png in Resources */,
 				BE0649BB2D6602FF00735B5A /* tasksInfoLight.png in Resources */,
 				BE0649D32D6622B800735B5A /* tasksSlideTwo.png in Resources */,
+				BE0D05282D91CA5E00F69E30 /* leaderboardSlideOne.png in Resources */,
 				BE0D313E2D6DCDCE00C1D99C /* levelBannerDark.png in Resources */,
 				BEC7CA752D65434F007DE945 /* inputCapsuleLight.png in Resources */,
 				BE0649B52D65F7B200735B5A /* profilePictureDark.png in Resources */,
@@ -621,6 +664,7 @@
 				BE0D31582D705CB800C1D99C /* correctAnswer.mp3 in Resources */,
 				BEAD39772D7CCD4F000018C5 /* leaderboardBackgroundDark.png in Resources */,
 				BEAD39732D7788B4000018C5 /* pythonLogo.png in Resources */,
+				BE0D05302D91CFFE00F69E30 /* statsInfoSlideOne.png in Resources */,
 				BE0649D52D6622C300735B5A /* tasksSlideOne.png in Resources */,
 				BEAD395B2D770966000018C5 /* dataStructureLight.png in Resources */,
 				BEDD46AA2D6686A2004DBC47 /* ramLowLevel.png in Resources */,
@@ -709,6 +753,7 @@
 				BE0D051A2D90385600F69E30 /* HTTPEchoHandler.swift in Sources */,
 				BEDD46A42D66853C004DBC47 /* ShopViewController.swift in Sources */,
 				BE0D051E2D904D5600F69E30 /* Constants.swift in Sources */,
+				BE0D05342D92E54200F69E30 /* FeedbackViewController.swift in Sources */,
 				BEAE16CD2D81A3AF00383869 /* LLMNetwork.swift in Sources */,
 				BEA452B82D82F1A500F277F7 /* TasksBrain.swift in Sources */,
 				BE0649B72D65FC8700735B5A /* AccountViewController.swift in Sources */,
@@ -723,8 +768,11 @@
 				BE0D31512D6F71CC00C1D99C /* BadgeViewController.swift in Sources */,
 				BE7CEACD2D64EBEA0047C5F2 /* SceneDelegate.swift in Sources */,
 				BE0649D92D6632CA00735B5A /* StatsViewController.swift in Sources */,
+				BE0D05362D934DF500F69E30 /* DeepDiveAnalysisList.swift in Sources */,
 				BE7CEAEC2D64FA160047C5F2 /* gifLoader.swift in Sources */,
 				BE0649DF2D667AE600735B5A /* ShopCollectionViewCell.swift in Sources */,
+				BE0D052E2D91CE3A00F69E30 /* StatsInfoViewController.swift in Sources */,
+				BE0D052A2D91CAA800F69E30 /* LeaderboardInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,13 +15,12 @@ class ShopViewController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var tempView: UIView!
     @IBOutlet weak var pointsItem: UIBarButtonItem!
     
-    var coins: Int = UserData.shared.coins
-    var rank: Int = UserData.shared.rank
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pointsItem.title = "\(coins)"
+        Task {
+            pointsItem.title = await UserData.shared.query(for: "gold")
+        }
         
         tempView.customView(setup: true)
         timeSegmentControl.customView(setup: true)
