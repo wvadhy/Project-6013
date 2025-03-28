@@ -90,12 +90,13 @@ struct CodeRushBrain {
         do {
             let average = await calculateAverage()
             let currenHighScore = await getHighScore()
+            let rank = await UserData.shared.query(for: "rank")
             try await docRef.updateData([
                 "codeRushTotal": FieldValue.increment(Int64(total)),
                 "codeRushAverage": Int(average)!,
-                "codeRushHighScore": total > Int(currenHighScore)! ? correct : Int(currenHighScore)!,
+                "codeRushHighScore": correct > Int(currenHighScore)! ? correct : Int(currenHighScore)!,
                 "totalGamesPlayed": FieldValue.increment(Int64(1.0)),
-                "gold": FieldValue.increment(Int64(44.0)),
+                "gold": FieldValue.increment(Int64(1.0)),
                 "pointsTotal": FieldValue.increment(Int64(total))
             ])
             print("Document successfully updated")

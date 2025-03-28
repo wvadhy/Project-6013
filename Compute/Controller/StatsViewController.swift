@@ -43,7 +43,7 @@ class StatsViewController: UIViewController, ChartViewDelegate, UISearchBarDeleg
             let points = await UserData.shared.query(for: "pointsTotal")
             let gold = await UserData.shared.query(for: "gold")
             rankLabel.text = await UserData.shared.query(for: "rank")
-            pointsItem.title = "£\(gold)"
+            pointsItem.title = "₡\(gold)"
             nameLabel.text = await UserData.shared.query(for: "name")
             tasksCompletedLabel.text = await UserData.shared.query(for: "totalGamesPlayed")
             totalPointsButton.setTitle("\(points) total points", for: .normal)

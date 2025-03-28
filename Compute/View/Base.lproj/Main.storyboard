@@ -503,6 +503,7 @@
                     <connections>
                         <outlet property="feedbackMiniView" destination="hVs-Ne-dME" id="KXI-dV-HwL"/>
                         <outlet property="pageName" destination="eZG-6f-Qmq" id="AJt-cu-rDZ"/>
+                        <outlet property="pointsLabel" destination="arE-g4-JkD" id="Stk-rp-IvQ"/>
                         <outlet property="prosAndConsView" destination="024-fx-XLy" id="44e-GM-ADY"/>
                     </connections>
                 </viewController>
@@ -1105,9 +1106,9 @@
                         <outlet property="streakView" destination="8Nx-cR-3Sy" id="gdc-fq-Mhu"/>
                         <outlet property="taskTableView" destination="P9Q-9u-L3N" id="KlD-2q-DxX"/>
                         <outlet property="wellView" destination="aHW-Ou-dtp" id="uUl-NS-Ve4"/>
-                        <segue destination="Pwp-Ab-7u8" kind="presentation" identifier="goToCodeRush" modalPresentationStyle="fullScreen" id="Sp6-oC-hAR"/>
-                        <segue destination="Rzl-K8-yPZ" kind="presentation" identifier="goToDeepDive" modalPresentationStyle="fullScreen" id="aTD-42-NBs"/>
+                        <segue destination="Rzl-K8-yPZ" kind="presentation" identifier="goToDeepDive" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="aTD-42-NBs"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToStart" modalPresentationStyle="fullScreen" id="XDL-Ut-rxv"/>
+                        <segue destination="MQT-aF-QEt" kind="presentation" identifier="goToCodeRush" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="aVC-Gj-EFI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nYT-Pr-0ZB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1181,49 +1182,34 @@
                                     <imageReference key="image" image="arrowshape.left.fill" catalog="system" symbolScale="large" renderingMode="template"/>
                                 </state>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UGA-YW-RMc">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="entryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="kZd-t2-yGW">
+                                        <rect key="frame" x="71" y="301" width="250" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="92n-Ml-fLU">
+                                        <rect key="frame" x="32" y="229" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="backgroundColour"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pbd-op-1wf"/>
                         <color key="backgroundColor" name="backgroundColour"/>
                     </view>
                     <connections>
                         <outlet property="codeView" destination="CFR-6x-Hla" id="uxd-Bd-KKg"/>
+                        <outlet property="coverView" destination="UGA-YW-RMc" id="95P-w0-Iav"/>
+                        <outlet property="loader" destination="92n-Ml-fLU" id="NXx-7o-dAe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z9g-KJ-tSD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2200.7633587786258" y="362.67605633802816"/>
-        </scene>
-        <!--Count Down View Controller-->
-        <scene sceneID="QPY-49-uVV">
-            <objects>
-                <viewController id="Pwp-Ab-7u8" customClass="CountDownViewController" customModule="Compute" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="T0h-vm-hzU">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="countdownBackground" translatesAutoresizingMaskIntoConstraints="NO" id="cQx-EB-q7a">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz8-BP-eaK">
-                                <rect key="frame" x="60" y="354" width="273" height="144"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="120"/>
-                                <color key="textColor" name="accentColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="r1s-MC-nO2"/>
-                        <color key="backgroundColor" name="mainColour"/>
-                    </view>
-                    <connections>
-                        <outlet property="countdownLabel" destination="Pz8-BP-eaK" id="7B4-HZ-Cpv"/>
-                        <segue destination="MQT-aF-QEt" kind="presentation" identifier="goToQuestion" modalPresentationStyle="fullScreen" id="UlE-Of-CIN"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SNo-Eo-N0w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3107.6335877862593" y="362.67605633802816"/>
         </scene>
         <!--Analysis View Controller-->
         <scene sceneID="cIl-5g-tJX">
@@ -1488,6 +1474,21 @@
                                     <color key="baseBackgroundColor" name="backgroundColour"/>
                                 </buttonConfiguration>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MO3-OB-53K">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="entryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="pwx-Qs-PrA">
+                                        <rect key="frame" x="71" y="301" width="250" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8uG-e0-PiW">
+                                        <rect key="frame" x="32" y="229" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="backgroundColour"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PIr-Mc-TvS"/>
                         <color key="backgroundColor" name="backgroundColour"/>
@@ -1496,9 +1497,11 @@
                         <outlet property="answerOne" destination="2vz-Gi-nSS" id="3tI-2R-AnB"/>
                         <outlet property="answerThree" destination="Qu7-1c-hao" id="LY3-mL-w9F"/>
                         <outlet property="answerTwo" destination="ag4-2d-dRE" id="geO-wT-01C"/>
+                        <outlet property="coverView" destination="MO3-OB-53K" id="qbv-rE-UF2"/>
                         <outlet property="imageOne" destination="kYx-iH-XJU" id="Q5p-wx-Atm"/>
                         <outlet property="imageThree" destination="i0L-Rg-mOR" id="fua-XR-uVu"/>
                         <outlet property="imageTwo" destination="pUq-4E-2dY" id="rPW-CZ-i1L"/>
+                        <outlet property="loader" destination="8uG-e0-PiW" id="S4n-UX-dTI"/>
                         <outlet property="progressView" destination="WlQ-3V-QVx" id="AUm-z7-QPP"/>
                         <outlet property="questionLabel" destination="4DI-3A-R8N" id="6Fv-UE-2QD"/>
                         <outlet property="questionView" destination="WfA-s0-G5A" id="7LN-pV-4rv"/>
@@ -1509,7 +1512,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S4z-Rq-YM5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3107.6335877862593" y="1078.8732394366198"/>
+            <point key="canvasLocation" x="3108" y="363"/>
         </scene>
         <!--Rush Result View Controller-->
         <scene sceneID="B7c-zE-3tx">
@@ -1578,7 +1581,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UuA-DG-eaE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4003.8167938931297" y="1078.8732394366198"/>
+            <point key="canvasLocation" x="3108" y="1079"/>
         </scene>
         <!--Leaderboard-->
         <scene sceneID="TDD-V6-Ge4">
@@ -2593,7 +2596,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m9N-pB-cAo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6368.7022900763359" y="410.56338028169017"/>
+            <point key="canvasLocation" x="5756" y="362"/>
         </scene>
         <!--Task Info View Controller-->
         <scene sceneID="1ph-fg-4HF">
@@ -2812,7 +2815,7 @@
         <designable name="ZpD-z7-MBX"/>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="kRu-rx-2eN"/>
+        <segue reference="4Uo-dC-qNh"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Trophy.png" width="150" height="150"/>
@@ -2828,7 +2831,6 @@
         <image name="circle.inset.filled" catalog="system" width="128" height="123"/>
         <image name="clock" catalog="system" width="128" height="123"/>
         <image name="clock.fill" catalog="system" width="128" height="123"/>
-        <image name="countdownBackground" width="400" height="866.66668701171875"/>
         <image name="countdownBackgroundLight.png" width="900" height="1950"/>
         <image name="cryptoBadge.png" width="500" height="500"/>
         <image name="curiousBadge.png" width="500" height="500"/>

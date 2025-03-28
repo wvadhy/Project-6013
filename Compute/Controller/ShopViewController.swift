@@ -19,7 +19,8 @@ class ShopViewController: UIViewController, UITableViewDelegate {
         super.viewDidLoad()
         
         Task {
-            pointsItem.title = await UserData.shared.query(for: "gold")
+            let gold = await UserData.shared.query(for: "gold")
+            pointsItem.title = "₡\(gold)"
         }
         
         tempView.customView(setup: true)

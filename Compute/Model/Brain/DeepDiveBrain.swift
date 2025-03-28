@@ -1,4 +1,5 @@
 import Foundation
+import FirebaseFirestore
 
 struct DeepDiveBrain {
     
@@ -16,6 +17,23 @@ struct DeepDiveBrain {
             return "Error: \(error)"
         }
     }
+    
+//    func updateEntries() async -> Void {
+//        let docRef = Database.store.collection("users").document(UserData.shared.user!.uid)
+//        do {
+//            try await docRef.updateData([
+//                "deepDiveTotal": FieldValue.increment(Int64(total)),
+//                "deepDiveAverage": Int(average)!,
+//                "deepDiveHighScore": total > Int(currenHighScore)! ? correct : Int(currenHighScore)!,
+//                "totalGamesPlayed": FieldValue.increment(Int64(1.0)),
+//                "gold": FieldValue.increment(Int64(44.0)),
+//                "pointsTotal": FieldValue.increment(Int64(total))
+//            ])
+//            print("Document successfully updated")
+//        } catch {
+//            print("Error updating document: \(error)")
+//        }
+//    }
     
     func analyseAnswer(for lang: String, with code: String) async -> DeepDiveAnalysisList {
         do {

@@ -7,6 +7,8 @@ class FeedbackViewController: UIViewController {
     @IBOutlet weak var feedbackMiniView: UIView!
     @IBOutlet weak var prosAndConsView: UIView!
     @IBOutlet weak var pageName: UILabel!
+    @IBOutlet weak var pointsLabel: UIBarButtonItem!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +17,11 @@ class FeedbackViewController: UIViewController {
         prosAndConsView.layer.cornerRadius = 15
         prosAndConsView.layer.borderWidth = 2
         prosAndConsView.layer.borderColor = UIColor.black.cgColor
+        
+        Task {
+            let gold = await UserData.shared.query(for: "gold")
+            pointsLabel.title = "₡\(gold)"
+        }
     }
     
     @IBAction func pageChanged(_ sender: UIPageControl) {

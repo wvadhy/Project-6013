@@ -12,7 +12,6 @@
 		BE0649A82D65CDCC00735B5A /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE0649A72D65CDCC00735B5A /* TaskCell.xib */; };
 		BE0649A92D65CDCC00735B5A /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0649A62D65CDCC00735B5A /* TaskCell.swift */; };
 		BE0649AB2D65D52200735B5A /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0649AA2D65D52200735B5A /* fire.png */; };
-		BE0649AF2D65EE0700735B5A /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0649AE2D65EE0700735B5A /* CountDownViewController.swift */; };
 		BE0649B12D65F16A00735B5A /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0649B02D65F16A00735B5A /* QuestionViewController.swift */; };
 		BE0649B32D65F5EE00735B5A /* profilePictureLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0649B22D65F5EE00735B5A /* profilePictureLight.png */; };
 		BE0649B52D65F7B200735B5A /* profilePictureDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0649B42D65F7B200735B5A /* profilePictureDark.png */; };
@@ -86,6 +85,7 @@
 		BE7CEAF02D6502CD0047C5F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7CEAEF2D6502CD0047C5F2 /* LoginViewController.swift */; };
 		BE7CEAF42D6508A70047C5F2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7CEAF32D6508A70047C5F2 /* RegisterViewController.swift */; };
 		BE7CEAF62D650A680047C5F2 /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7CEAF52D650A680047C5F2 /* ForgotViewController.swift */; };
+		BE8122CC2D97330F00C392BB /* computeLoader.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE8122CB2D97330F00C392BB /* computeLoader.gif */; };
 		BEA1D44C2D89AF9F00DE1F17 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = BEA1D44B2D89AF9F00DE1F17 /* loading.gif */; };
 		BEA452B62D82284900F277F7 /* CodeRushQuestionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA452B52D82284900F277F7 /* CodeRushQuestionList.swift */; };
 		BEA452B82D82F1A500F277F7 /* TasksBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA452B72D82F1A400F277F7 /* TasksBrain.swift */; };
@@ -146,7 +146,6 @@
 		BE0649A62D65CDCC00735B5A /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		BE0649A72D65CDCC00735B5A /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
 		BE0649AA2D65D52200735B5A /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
-		BE0649AE2D65EE0700735B5A /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
 		BE0649B02D65F16A00735B5A /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		BE0649B22D65F5EE00735B5A /* profilePictureLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profilePictureLight.png; sourceTree = "<group>"; };
 		BE0649B42D65F7B200735B5A /* profilePictureDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profilePictureDark.png; sourceTree = "<group>"; };
@@ -216,6 +215,7 @@
 		BE7CEAEF2D6502CD0047C5F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BE7CEAF32D6508A70047C5F2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		BE7CEAF52D650A680047C5F2 /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
+		BE8122CB2D97330F00C392BB /* computeLoader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = computeLoader.gif; sourceTree = "<group>"; };
 		BEA1D44B2D89AF9F00DE1F17 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		BEA452B52D82284900F277F7 /* CodeRushQuestionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeRushQuestionList.swift; sourceTree = "<group>"; };
 		BEA452B72D82F1A400F277F7 /* TasksBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksBrain.swift; sourceTree = "<group>"; };
@@ -419,7 +419,6 @@
 				BE7CEAF52D650A680047C5F2 /* ForgotViewController.swift */,
 				BEC7CA702D65307C007DE945 /* TaskViewController.swift */,
 				BE0649A42D65C73000735B5A /* TabBarController.swift */,
-				BE0649AE2D65EE0700735B5A /* CountDownViewController.swift */,
 				BE0649B02D65F16A00735B5A /* QuestionViewController.swift */,
 				BE0649B62D65FC8700735B5A /* AccountViewController.swift */,
 				BE0649C42D66073A00735B5A /* TaskInfoViewController.swift */,
@@ -439,6 +438,7 @@
 		BE7CEAE22D64F1C30047C5F2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BE8122CB2D97330F00C392BB /* computeLoader.gif */,
 				BE0D05312D91D08100F69E30 /* statsInfoSlideTwo.png */,
 				BE0D052F2D91CFFE00F69E30 /* statsInfoSlideOne.png */,
 				BE0D052B2D91CCD200F69E30 /* leaderboardSlideTwo.png */,
@@ -643,6 +643,7 @@
 				BE0649DD2D6672D600735B5A /* tasksSlideThree.png in Resources */,
 				BEAD39712D7788AD000018C5 /* javaLogo.png in Resources */,
 				BE0D31292D6D17BC00C1D99C /* rushResultCornerLight.png in Resources */,
+				BE8122CC2D97330F00C392BB /* computeLoader.gif in Resources */,
 				BE0D31572D705CB800C1D99C /* wrongAnswer.mp3 in Resources */,
 				BEB37BD32D748BE200A5A26D /* difficultyLogoLight.png in Resources */,
 				BE0649BB2D6602FF00735B5A /* tasksInfoLight.png in Resources */,
@@ -746,7 +747,6 @@
 				BE0649A92D65CDCC00735B5A /* TaskCell.swift in Sources */,
 				BE0D05242D906DF300F69E30 /* StatsData.swift in Sources */,
 				BEA452B62D82284900F277F7 /* CodeRushQuestionList.swift in Sources */,
-				BE0649AF2D65EE0700735B5A /* CountDownViewController.swift in Sources */,
 				BE7CEACB2D64EBEA0047C5F2 /* AppDelegate.swift in Sources */,
 				BE7CEAF62D650A680047C5F2 /* ForgotViewController.swift in Sources */,
 				BE0D31422D6E0EEE00C1D99C /* StatsBrain.swift in Sources */,

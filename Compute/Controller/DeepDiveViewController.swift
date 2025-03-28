@@ -11,6 +11,9 @@ import Highlightr
 class DeepDiveViewController: UIViewController {
     
     @IBOutlet weak var codeView: UIView!
+    @IBOutlet weak var loader: UIImageView!
+    @IBOutlet weak var coverView: UIView!
+    
     
     var textView: UITextView = UITextView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
     
@@ -39,14 +42,24 @@ class DeepDiveViewController: UIViewController {
         
         codeView.addSubview(textView)
         
-        setupPage()
+        loader.image = UIImage.gifImageWithName("computeLoader")
     }
     
-    func setupPage() -> Void {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
         Task {
-            let text = await DeepDiveBrain.shared.getQuestion(for: language)
-            textView.text = text
+            await setupPage()
+            UIView.animate(withDuration: 1) {
+                self.coverView.alpha = 0
+            }
         }
+        
+    }
+    
+    func setupPage() async -> Void {
+        let text = await DeepDiveBrain.shared.getQuestion(for: language)
+        textView.text = text
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) { codeView.customView() }

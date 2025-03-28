@@ -18,6 +18,8 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var timeRemaining: UILabel!
     @IBOutlet weak var questionsRemaining: UILabel!
     
+    @IBOutlet weak var coverView: UIView!
+    @IBOutlet weak var loader: UIImageView!
     
     var questions: [CodeRushQuestion] = []
     var currentQuestion: CodeRushQuestion = CodeRushQuestion(question: "",
@@ -46,11 +48,24 @@ class QuestionViewController: UIViewController {
         images.append(imageThree)
         
         questionView.customView(setup: true, color: .black)
-
-        generateNewPage(at: current)
-        startCountDown()
-        checkMode()
         
+        loader.image = UIImage.gifImageWithName("computeLoader")
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        Task {
+            questions = await CodeRushBrain.shared.getQuestions(for: language)
+            generateNewPage(at: current)
+            startCountDown()
+            checkMode()
+            
+            UIView.animate(withDuration: 1) {
+                self.coverView.alpha = 0
+            }
+        }
     }
     
     func startCountDown(){

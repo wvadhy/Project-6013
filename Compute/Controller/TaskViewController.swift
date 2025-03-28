@@ -34,7 +34,8 @@ class TaskViewController: UIViewController, UITableViewDelegate {
         taskTableView.register(UINib(nibName: "TaskCell", bundle: nil), forCellReuseIdentifier: "Tony")
         
         Task {
-            pointsItem.title = await UserData.shared.query(for: "gold")
+            let gold = await UserData.shared.query(for: "gold")
+            pointsItem.title = "₡\(gold)"
         }
         
         checkMode()
