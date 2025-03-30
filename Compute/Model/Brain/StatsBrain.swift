@@ -1,7 +1,22 @@
 import Foundation
 import Charts
 
-struct StatsBrain {
+class StatsBrain {
+    
+    static var shared: StatsBrain = StatsBrain()
+    
+    var correct: Int = 0
+    var total: Int = 0
+    
+    init(){
+        Task {
+            let tempCorrect = await CodeRushBrain.shared.getTotalCorrect()
+            let tempTotal = await CodeRushBrain.shared.getTotal()
+            
+            correct = Int(tempCorrect)!
+            total = Int(tempTotal)!
+        }
+    }
         
     func createLineChart() -> LineChartView {
         
@@ -35,20 +50,18 @@ struct StatsBrain {
         
         pieChart.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
         
-//        let correct = await CodeRushBrain.shared.getTotalCorrect()
-//        let total = await CodeRushBrain.shared.getTotal()
-//        entries.append(ChartDataEntry(x: Double(correct)!, y: Double(correct)!))
-//        entries.append(ChartDataEntry(x: Double(total)! - Double(correct)!,
-//                                      y: Double(total)! - Double(correct)!))
-//        
-//        let set = PieChartDataSet(entries: entries)
-//        set.colors = [.mainColour, .accent]
-//        let data = PieChartData(dataSet: set)
-//        
-//        await pieChart.legendRenderer.legend?.enabled = false
-//        data.setDrawValues(false)
-//        
-//        pieChart.data = data
+        entries.append(ChartDataEntry(x: Double(correct), y: Double(correct)))
+        entries.append(ChartDataEntry(x: Double(total) - Double(correct),
+                                      y: Double(total) - Double(correct)))
+        
+        let set = PieChartDataSet(entries: entries)
+        set.colors = [.mainColour, .accent]
+        let data = PieChartData(dataSet: set)
+        
+        pieChart.legendRenderer.legend?.enabled = false
+        data.setDrawValues(false)
+        
+        pieChart.data = data
         
         return pieChart
     }

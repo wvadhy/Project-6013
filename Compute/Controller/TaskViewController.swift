@@ -29,6 +29,7 @@ class TaskViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         
         UserData.shared
+        
         taskTableView.dataSource = self
         taskTableView.delegate = self
         taskTableView.register(UINib(nibName: "TaskCell", bundle: nil), forCellReuseIdentifier: "Tony")
@@ -36,6 +37,7 @@ class TaskViewController: UIViewController, UITableViewDelegate {
         Task {
             let gold = await UserData.shared.query(for: "gold")
             pointsItem.title = "₡\(gold)"
+            Context.shared
         }
         
         checkMode()
@@ -96,7 +98,7 @@ class TaskViewController: UIViewController, UITableViewDelegate {
             let destinationVC = segue.destination as? DeepDiveViewController
             destinationVC?.language = language
         } else {
-            let destinationVC = segue.destination as? CountDownViewController
+            let destinationVC = segue.destination as? QuestionViewController
             destinationVC?.language = language
         }
     }

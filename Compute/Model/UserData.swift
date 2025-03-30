@@ -5,13 +5,14 @@ import FirebaseAuth
 struct UserData {
     
     var user: User?
-    
+    var name: String = ""
     
     static var shared: UserData = UserData(for: Auth.auth().currentUser!)
     
     init(for person: User?) {
         print("Creating user data for: \(String(describing: person?.email))")
         user = person
+        print(user?.uid)
     }
     
     public func query(for name: String) async -> String {

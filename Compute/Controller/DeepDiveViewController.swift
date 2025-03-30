@@ -24,7 +24,6 @@ class DeepDiveViewController: UIViewController {
         super.viewDidLoad()
         
         codeView.customView(setup: true)
-        view.setGradientBackground(colorTop: .white, colorBottom: UIColor(red: 242, green: 239, blue: 231, alpha: 1))
         
         let textStorage = CodeAttributedString()
         textStorage.language = language

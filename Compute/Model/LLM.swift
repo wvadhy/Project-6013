@@ -16,12 +16,19 @@ class LLM: LLMDelegate {
         network.getData(from: url) { (ouput) in print("Sucessfully obtained key!") }
     }
     
-    func tokenObtained(_ token: Token) { self.model = OpenAI(apiToken: token.key) }
+    func tokenObtained(_ token: Token) {
+        self.model = OpenAI(apiToken: token.key)
+    }
         
     func tokenFailed(_ error: any Error) { print("Error: \(String(describing: error))") }
     
+    public func getChat(for msg: String ) async throws -> ChatResult {
+        let query = ChatQuery(messages: [.system(.init(content: "\(msg), \(Context.shared.body)"))], model: .gpt4_o)
+        return try await model.chats(query: query)
+    }
+    
     public func getCodeRush(for lang: String) async throws -> ChatResult {
-        let query = ChatQuery(messages: [.system(.init(content: "10 \(lang) questions"))],
+        let query = ChatQuery(messages: [.system(.init(content: "10 short \(lang) questions"))],
                               model: .gpt4_o,
                               responseFormat: .jsonSchema(name: "crql", type: CodeRushQuestionList.self))
         return try await model.chats(query: query)

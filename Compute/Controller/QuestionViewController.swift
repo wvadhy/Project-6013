@@ -25,13 +25,14 @@ class QuestionViewController: UIViewController {
     var currentQuestion: CodeRushQuestion = CodeRushQuestion(question: "",
                                                              answer_one: "",
                                                              answer_two: "",
-                                                             answer_three: "",
                                                              correct_answer: "")
     var timeLeft = 50
     var player = AVAudioPlayer()
     var progress = 0.0
     var buttons: [UIButton] = []
     var images: [UIImageView] = []
+    var currentAnswers: [String] = []
+
     var current: Int = 0
     var remaining: Int = 0
     var language: String = "Python"
@@ -120,9 +121,15 @@ class QuestionViewController: UIViewController {
     }
     
     func generateAnswers(){
-        answerOne.setTitle(currentQuestion.answer_one, for: .normal)
-        answerTwo.setTitle(currentQuestion.answer_two, for: .normal)
-        answerThree.setTitle(currentQuestion.answer_three, for: .normal)
+        buttons.shuffle()
+        
+        currentAnswers.append(currentQuestion.answer_one)
+        currentAnswers.append(currentQuestion.answer_two)
+        currentAnswers.append(currentQuestion.correct_answer)
+        
+        for i in 0...2 {
+            buttons[i].setTitle(currentAnswers[i], for: .normal)
+        }
     }
     
     @IBAction func btnPressed(_ sender: UIButton) {
@@ -161,6 +168,7 @@ class QuestionViewController: UIViewController {
         }
         Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { [self] timer in
             current += 1
+            currentAnswers.removeAll()
             generateNewPage(at: current)
         }
     }

@@ -84,8 +84,17 @@ struct CodeRushBrain {
         return total
     }
     
+    func getGold() -> Double {
+        return Double(correct)
+    }
     
-    func updateEntries() async -> Void {
+    mutating func reset() {
+        correct = 0
+        total = 0
+    }
+    
+    
+    mutating func updateEntries() async -> Void {
         let docRef = Database.store.collection("users").document(UserData.shared.user!.uid)
         do {
             let average = await calculateAverage()
@@ -96,10 +105,11 @@ struct CodeRushBrain {
                 "codeRushAverage": Int(average)!,
                 "codeRushHighScore": correct > Int(currenHighScore)! ? correct : Int(currenHighScore)!,
                 "totalGamesPlayed": FieldValue.increment(Int64(1.0)),
-                "gold": FieldValue.increment(Int64(1.0)),
+                "gold": FieldValue.increment(Int64(getGold())),
                 "pointsTotal": FieldValue.increment(Int64(total))
             ])
             print("Document successfully updated")
+            reset()
         } catch {
             print("Error updating document: \(error)")
         }

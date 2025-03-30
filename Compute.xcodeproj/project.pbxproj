@@ -70,6 +70,12 @@
 		BE0D31582D705CB800C1D99C /* correctAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31562D705CB800C1D99C /* correctAnswer.mp3 */; };
 		BE0D315A2D705FE300C1D99C /* thumbsUpLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D31592D705FE200C1D99C /* thumbsUpLight.png */; };
 		BE0D315C2D70616000C1D99C /* wrongCrossLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0D315B2D70616000C1D99C /* wrongCrossLight.png */; };
+		BE13DF2F2D997F3900DA1491 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13DF2E2D997F3900DA1491 /* ChatViewController.swift */; };
+		BE13DF322D998E6C00DA1491 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE13DF312D998E6C00DA1491 /* MessageCell.xib */; };
+		BE13DF332D998E6C00DA1491 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13DF302D998E6C00DA1491 /* MessageCell.swift */; };
+		BE13DF352D99B4D600DA1491 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13DF342D99B4D600DA1491 /* Receipt.swift */; };
+		BE13DF372D99B69F00DA1491 /* ChatBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13DF362D99B69F00DA1491 /* ChatBrain.swift */; };
+		BE13DF392D99CAB100DA1491 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13DF382D99CAB100DA1491 /* Context.swift */; };
 		BE30487B2D86573300B6AA2C /* DeepDiveAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE30487A2D86573300B6AA2C /* DeepDiveAnalysis.swift */; };
 		BE7CEACB2D64EBEA0047C5F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7CEACA2D64EBEA0047C5F2 /* AppDelegate.swift */; };
 		BE7CEACD2D64EBEA0047C5F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7CEACC2D64EBEA0047C5F2 /* SceneDelegate.swift */; };
@@ -86,6 +92,10 @@
 		BE7CEAF42D6508A70047C5F2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7CEAF32D6508A70047C5F2 /* RegisterViewController.swift */; };
 		BE7CEAF62D650A680047C5F2 /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7CEAF52D650A680047C5F2 /* ForgotViewController.swift */; };
 		BE8122CC2D97330F00C392BB /* computeLoader.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE8122CB2D97330F00C392BB /* computeLoader.gif */; };
+		BE8122CE2D97544800C392BB /* BoardBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8122CD2D97544800C392BB /* BoardBrain.swift */; };
+		BE8122D12D9759AC00C392BB /* BoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8122CF2D9759AC00C392BB /* BoardCell.swift */; };
+		BE8122D22D9759AC00C392BB /* BoardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE8122D02D9759AC00C392BB /* BoardCell.xib */; };
+		BE8122D82D97784B00C392BB /* BoardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8122D72D97784B00C392BB /* BoardData.swift */; };
 		BEA1D44C2D89AF9F00DE1F17 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = BEA1D44B2D89AF9F00DE1F17 /* loading.gif */; };
 		BEA452B62D82284900F277F7 /* CodeRushQuestionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA452B52D82284900F277F7 /* CodeRushQuestionList.swift */; };
 		BEA452B82D82F1A500F277F7 /* TasksBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA452B72D82F1A400F277F7 /* TasksBrain.swift */; };
@@ -198,6 +208,12 @@
 		BE0D31562D705CB800C1D99C /* correctAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correctAnswer.mp3; sourceTree = "<group>"; };
 		BE0D31592D705FE200C1D99C /* thumbsUpLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbsUpLight.png; sourceTree = "<group>"; };
 		BE0D315B2D70616000C1D99C /* wrongCrossLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrongCrossLight.png; sourceTree = "<group>"; };
+		BE13DF2E2D997F3900DA1491 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		BE13DF302D998E6C00DA1491 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		BE13DF312D998E6C00DA1491 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		BE13DF342D99B4D600DA1491 /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
+		BE13DF362D99B69F00DA1491 /* ChatBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBrain.swift; sourceTree = "<group>"; };
+		BE13DF382D99CAB100DA1491 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		BE30487A2D86573300B6AA2C /* DeepDiveAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveAnalysis.swift; sourceTree = "<group>"; };
 		BE7CEAC72D64EBEA0047C5F2 /* Compute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7CEACA2D64EBEA0047C5F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -216,6 +232,10 @@
 		BE7CEAF32D6508A70047C5F2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		BE7CEAF52D650A680047C5F2 /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
 		BE8122CB2D97330F00C392BB /* computeLoader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = computeLoader.gif; sourceTree = "<group>"; };
+		BE8122CD2D97544800C392BB /* BoardBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardBrain.swift; sourceTree = "<group>"; };
+		BE8122CF2D9759AC00C392BB /* BoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCell.swift; sourceTree = "<group>"; };
+		BE8122D02D9759AC00C392BB /* BoardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoardCell.xib; sourceTree = "<group>"; };
+		BE8122D72D97784B00C392BB /* BoardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardData.swift; sourceTree = "<group>"; };
 		BEA1D44B2D89AF9F00DE1F17 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		BEA452B52D82284900F277F7 /* CodeRushQuestionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeRushQuestionList.swift; sourceTree = "<group>"; };
 		BEA452B72D82F1A400F277F7 /* TasksBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksBrain.swift; sourceTree = "<group>"; };
@@ -315,6 +335,8 @@
 				BEAD39812D80D240000018C5 /* CodeRushBrain.swift */,
 				BE06939E2D81C50D00A15327 /* DeepDiveBrain.swift */,
 				BEA452B72D82F1A400F277F7 /* TasksBrain.swift */,
+				BE8122CD2D97544800C392BB /* BoardBrain.swift */,
+				BE13DF362D99B69F00DA1491 /* ChatBrain.swift */,
 			);
 			path = Brain;
 			sourceTree = "<group>";
@@ -377,23 +399,23 @@
 		BE7CEADE2D64EBF50047C5F2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BE8122D62D9775DA00C392BB /* Structure */,
 				BE0D05262D9097D600F69E30 /* Brain */,
 				BE0D05252D9097AF00F69E30 /* Network */,
 				BE7CEAEB2D64FA160047C5F2 /* gifLoader.swift */,
+				BEA452B92D82F2A700F277F7 /* UserData.swift */,
+				BE0D05232D906DF300F69E30 /* StatsData.swift */,
 				BEDD46A72D6685C6004DBC47 /* ShopItem.swift */,
-				BEAD397A2D809EBA000018C5 /* CodeRushQuestion.swift */,
 				BEAD397C2D80A0A3000018C5 /* Response.swift */,
 				BEAD39832D80D35D000018C5 /* LLM.swift */,
 				BEAD398B2D80DB5D000018C5 /* Token.swift */,
 				BE06939A2D81AEE300A15327 /* Activity.swift */,
-				BEA452B52D82284900F277F7 /* CodeRushQuestionList.swift */,
-				BEA452B92D82F2A700F277F7 /* UserData.swift */,
-				BE30487A2D86573300B6AA2C /* DeepDiveAnalysis.swift */,
 				BE0D051D2D904D5600F69E30 /* Constants.swift */,
 				BE0D051F2D90589500F69E30 /* Database.swift */,
 				BE0D05212D905AEB00F69E30 /* SearchBarLogic.swift */,
-				BE0D05232D906DF300F69E30 /* StatsData.swift */,
-				BE0D05352D934DF500F69E30 /* DeepDiveAnalysisList.swift */,
+				BE8122D72D97784B00C392BB /* BoardData.swift */,
+				BE13DF342D99B4D600DA1491 /* Receipt.swift */,
+				BE13DF382D99CAB100DA1491 /* Context.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -406,6 +428,10 @@
 				BE0649A72D65CDCC00735B5A /* TaskCell.xib */,
 				BE0649DE2D667AE600735B5A /* ShopCollectionViewCell.swift */,
 				BE0D31522D6F72EF00C1D99C /* BadgeCollectionViewCell.swift */,
+				BE8122CF2D9759AC00C392BB /* BoardCell.swift */,
+				BE8122D02D9759AC00C392BB /* BoardCell.xib */,
+				BE13DF302D998E6C00DA1491 /* MessageCell.swift */,
+				BE13DF312D998E6C00DA1491 /* MessageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -431,6 +457,7 @@
 				BE0D05292D91CAA800F69E30 /* LeaderboardInfoViewController.swift */,
 				BE0D052D2D91CE3A00F69E30 /* StatsInfoViewController.swift */,
 				BE0D05332D92E54200F69E30 /* FeedbackViewController.swift */,
+				BE13DF2E2D997F3900DA1491 /* ChatViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -500,6 +527,17 @@
 				BE7CEAE42D64F1D00047C5F2 /* logoLight.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		BE8122D62D9775DA00C392BB /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				BE0D05352D934DF500F69E30 /* DeepDiveAnalysisList.swift */,
+				BE30487A2D86573300B6AA2C /* DeepDiveAnalysis.swift */,
+				BEAD397A2D809EBA000018C5 /* CodeRushQuestion.swift */,
+				BEA452B52D82284900F277F7 /* CodeRushQuestionList.swift */,
+			);
+			path = Structure;
 			sourceTree = "<group>";
 		};
 		BEC9A63D2D70A02B00C2D716 /* Badges */ = {
@@ -625,6 +663,7 @@
 				BE0D314D2D6E26E800C1D99C /* entryScreenLogo.png in Resources */,
 				BE0D312B2D6D18A300C1D99C /* rushResultCornerDark.png in Resources */,
 				BE0649C12D66070200735B5A /* tasksSlideOneAnimated.gif in Resources */,
+				BE13DF322D998E6C00DA1491 /* MessageCell.xib in Resources */,
 				BE0D05322D91D08100F69E30 /* statsInfoSlideTwo.png in Resources */,
 				BEDD46B62D67C79D004DBC47 /* countdownBackgroundLight.png in Resources */,
 				BE0D315C2D70616000C1D99C /* wrongCrossLight.png in Resources */,
@@ -633,6 +672,7 @@
 				BEB37BD52D7493F200A5A26D /* leaderboardBackgroundLight.png in Resources */,
 				BEAD395F2D7709F9000018C5 /* dataStructuresDark.png in Resources */,
 				BEC9A64B2D70DB5F00C2D716 /* cryptoBadge.png in Resources */,
+				BE8122D22D9759AC00C392BB /* BoardCell.xib in Resources */,
 				BEC9A63F2D70A03400C2D716 /* rushGodBadge.png in Resources */,
 				BE7CEAE52D64F1D00047C5F2 /* logoDark.png in Resources */,
 				BEC9A65A2D711D4000C2D716 /* deepDiveCornerDark.png in Resources */,
@@ -729,6 +769,7 @@
 				BE7CEAF02D6502CD0047C5F2 /* LoginViewController.swift in Sources */,
 				BE0D313A2D6D480700C1D99C /* BounceButton.swift in Sources */,
 				BEAD39822D80D240000018C5 /* CodeRushBrain.swift in Sources */,
+				BE13DF352D99B4D600DA1491 /* Receipt.swift in Sources */,
 				BE30487B2D86573300B6AA2C /* DeepDiveAnalysis.swift in Sources */,
 				BEAD397B2D809EBA000018C5 /* CodeRushQuestion.swift in Sources */,
 				BE7CEACF2D64EBEA0047C5F2 /* ViewController.swift in Sources */,
@@ -743,6 +784,7 @@
 				BE06939B2D81AEE300A15327 /* Activity.swift in Sources */,
 				BE0649C52D66073A00735B5A /* TaskInfoViewController.swift in Sources */,
 				BE0D312D2D6D29A200C1D99C /* RushResultViewController.swift in Sources */,
+				BE13DF332D998E6C00DA1491 /* MessageCell.swift in Sources */,
 				BEAE16CB2D81A0C200383869 /* LLMDelegate.swift in Sources */,
 				BE0649A92D65CDCC00735B5A /* TaskCell.swift in Sources */,
 				BE0D05242D906DF300F69E30 /* StatsData.swift in Sources */,
@@ -754,11 +796,15 @@
 				BEDD46A42D66853C004DBC47 /* ShopViewController.swift in Sources */,
 				BE0D051E2D904D5600F69E30 /* Constants.swift in Sources */,
 				BE0D05342D92E54200F69E30 /* FeedbackViewController.swift in Sources */,
+				BE13DF2F2D997F3900DA1491 /* ChatViewController.swift in Sources */,
 				BEAE16CD2D81A3AF00383869 /* LLMNetwork.swift in Sources */,
 				BEA452B82D82F1A500F277F7 /* TasksBrain.swift in Sources */,
+				BE8122D82D97784B00C392BB /* BoardData.swift in Sources */,
 				BE0649B72D65FC8700735B5A /* AccountViewController.swift in Sources */,
+				BE8122CE2D97544800C392BB /* BoardBrain.swift in Sources */,
 				BEAD39842D80D35D000018C5 /* LLM.swift in Sources */,
 				BEAD397D2D80A0A3000018C5 /* Response.swift in Sources */,
+				BE13DF372D99B69F00DA1491 /* ChatBrain.swift in Sources */,
 				BE0693A12D81D20F00A15327 /* AnalysisViewController.swift in Sources */,
 				BE06939F2D81C50D00A15327 /* DeepDiveBrain.swift in Sources */,
 				BEAD398C2D80DB5D000018C5 /* Token.swift in Sources */,
@@ -768,10 +814,12 @@
 				BE0D31512D6F71CC00C1D99C /* BadgeViewController.swift in Sources */,
 				BE7CEACD2D64EBEA0047C5F2 /* SceneDelegate.swift in Sources */,
 				BE0649D92D6632CA00735B5A /* StatsViewController.swift in Sources */,
+				BE13DF392D99CAB100DA1491 /* Context.swift in Sources */,
 				BE0D05362D934DF500F69E30 /* DeepDiveAnalysisList.swift in Sources */,
 				BE7CEAEC2D64FA160047C5F2 /* gifLoader.swift in Sources */,
 				BE0649DF2D667AE600735B5A /* ShopCollectionViewCell.swift in Sources */,
 				BE0D052E2D91CE3A00F69E30 /* StatsInfoViewController.swift in Sources */,
+				BE8122D12D9759AC00C392BB /* BoardCell.swift in Sources */,
 				BE0D052A2D91CAA800F69E30 /* LeaderboardInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

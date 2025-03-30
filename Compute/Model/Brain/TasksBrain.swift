@@ -15,6 +15,4 @@ struct TasksBrain {
         "Easy": UIColor.green
     ]
     
-    
-    
 }

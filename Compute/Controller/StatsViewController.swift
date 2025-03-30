@@ -32,12 +32,13 @@ class StatsViewController: UIViewController, ChartViewDelegate, UISearchBarDeleg
     
     @IBOutlet weak var searchBar: UISearchBar!
     
-    var statsBrain: StatsBrain = StatsBrain()
     var searchLogic: SearchBarLogic = SearchBarLogic()
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        StatsBrain.shared
         
         Task {
             let points = await UserData.shared.query(for: "pointsTotal")
@@ -52,10 +53,14 @@ class StatsViewController: UIViewController, ChartViewDelegate, UISearchBarDeleg
             codeRushAverage.text = await CodeRushBrain.shared.getAverage()
         }
         
-        let barChart = statsBrain.createBarChart()
-        let pieChart = statsBrain.createPieChart()
-        let lineChart = statsBrain.createLineChart()
-        let pieGrowthChart = statsBrain.createPieChart()
+        let barChart =         StatsBrain.shared
+.createBarChart()
+        let pieChart =         StatsBrain.shared
+.createPieChart()
+        let lineChart =         StatsBrain.shared
+.createLineChart()
+        let pieGrowthChart =         StatsBrain.shared
+.createPieChart()
         
         pieChart.delegate = self
         lineChart.delegate = self
@@ -91,6 +96,8 @@ class StatsViewController: UIViewController, ChartViewDelegate, UISearchBarDeleg
     func updateStats(with data: StatsData) -> Void {
         rankLabel.text = "\(data.rank)"
         nameLabel.text = data.name
+        totalPointsButton.setTitle("\(data.points) total points", for: .normal)
+        tasksCompletedLabel.text = "\(data.gamesPlayed)"
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) -> Void {
@@ -155,9 +162,9 @@ extension UIView {
     layer.insertSublayer(gradientLayer, at: 0)
   }
     
-  func customView(setup valid: Bool = false, color bgc: UIColor = .mainColour) -> Void {
+    func customView(setup valid: Bool = false, color bgc: UIColor = .mainColour, corner radius: CGFloat = 10.0) -> Void {
       if (valid == true) {
-          layer.cornerRadius = 10
+          layer.cornerRadius = radius
           layer.masksToBounds = true
       }
       dropShadow(color: bgc, offSet: CGSize(width: -1, height: 1))

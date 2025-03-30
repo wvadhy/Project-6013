@@ -1,21 +1,96 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MessageCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Scarface" rowHeight="70" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Compute" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="70"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="361" height="70"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MPl-uI-4lT">
+                        <rect key="frame" x="10" y="10" width="341" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hh3-fg-NPy">
+                                <rect key="frame" x="0.0" y="1.6666666666666679" width="40" height="35.666666666666657"/>
+                                <color key="tintColor" name="secondaryColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7UR-5f-zid"/>
+                                    <constraint firstAttribute="width" constant="40" id="C95-2O-Re7"/>
+                                </constraints>
+                                <imageReference key="image" image="moon.stars.fill" catalog="system" symbolScale="small"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfu-iD-q69">
+                                <rect key="frame" x="48" y="0.0" width="245" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bK-M8-VVM">
+                                        <rect key="frame" x="10" y="10" width="225" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="mainColour"/>
+                                <constraints>
+                                    <constraint firstItem="4bK-M8-VVM" firstAttribute="leading" secondItem="Bfu-iD-q69" secondAttribute="leading" constant="10" id="07W-Ff-ge9"/>
+                                    <constraint firstItem="4bK-M8-VVM" firstAttribute="top" secondItem="Bfu-iD-q69" secondAttribute="top" constant="10" id="6hf-b6-Y7e"/>
+                                    <constraint firstAttribute="bottom" secondItem="4bK-M8-VVM" secondAttribute="bottom" constant="10" id="Woo-Ey-9D4"/>
+                                    <constraint firstAttribute="trailing" secondItem="4bK-M8-VVM" secondAttribute="trailing" constant="10" id="tre-UQ-1tq"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vr4-LT-4IY">
+                                <rect key="frame" x="301" y="2.3333333333333321" width="40" height="35.333333333333343"/>
+                                <color key="tintColor" name="mainColour"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RqI-h4-vb3"/>
+                                    <constraint firstAttribute="width" constant="40" id="rcA-h1-xPh"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MPl-uI-4lT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Hty-Wt-f4s"/>
+                    <constraint firstAttribute="trailing" secondItem="MPl-uI-4lT" secondAttribute="trailing" constant="10" id="V35-je-saq"/>
+                    <constraint firstAttribute="bottom" secondItem="MPl-uI-4lT" secondAttribute="bottom" constant="10" id="dGU-3h-hzr"/>
+                    <constraint firstItem="MPl-uI-4lT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zF3-pg-w6z"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="backgroundColour"/>
+            <connections>
+                <outlet property="leftimage" destination="Hh3-fg-NPy" id="ch7-kh-NNE"/>
+                <outlet property="message" destination="4bK-M8-VVM" id="5i2-NM-pfQ"/>
+                <outlet property="messageBox" destination="Bfu-iD-q69" id="TQb-XM-ET1"/>
+                <outlet property="rightImage" destination="vr4-LT-4IY" id="VNQ-jc-A4z"/>
+            </connections>
+            <point key="canvasLocation" x="158.01526717557252" y="3.5211267605633805"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="moon.stars.fill" catalog="system" width="125" height="128"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="backgroundColour">
+            <color red="0.94901960784313721" green="0.93725490196078431" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainColour">
+            <color red="0.16078431372549021" green="0.45098039215686275" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryColor">
+            <color red="0.28235294117647058" green="0.65098039215686276" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
