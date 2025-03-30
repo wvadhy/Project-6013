@@ -8,7 +8,6 @@ class AnalysisViewController: UIViewController {
     @IBOutlet weak var feedbackBackground: UIView!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var scoreBar: UIProgressView!
-    @IBOutlet weak var loading: UIImageView!
     
     var code: String = ""
     var language: String = "Python"

@@ -10,11 +10,11 @@ struct CodeRushQuestion: StructuredOutput {
     
     static let example: Self = {
         .init(
-            question: "How do you make a list?",
-            answer_one: "list()",
-            answer_two: "dict()",
-            answer_three: "set()",
-            correct_answer: "list()"
+            question: "Question",
+            answer_one: "AnswerOne",
+            answer_two: "AnswerTwo",
+            answer_three: "AnswerThree",
+            correct_answer: "AnswerTwo"
         )
     }()
 }
