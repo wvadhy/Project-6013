@@ -38,9 +38,11 @@ class FeedbackViewController: UIViewController {
             progressView.trackColor = .lightGray
             progressView.center = CGPoint(x: 310, y: 170)
             
+            let completed = Int(totalGames)!
+            
             view.addSubview(progressView)
             
-            progressView.progress = Float(0.3)
+            progressView.progress = Float(completed) / 10
         }
     }
     

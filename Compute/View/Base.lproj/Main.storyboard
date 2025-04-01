@@ -1360,7 +1360,7 @@
                                     <action selector="helpMePressed:" destination="Rzl-K8-yPZ" eventType="touchUpInside" id="OiT-f4-HxE"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Note: Asking AI for help will result in no points being given for this problem." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x1z-GT-Md1">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Note: Asking AI for help will result in half points being given for this problem." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x1z-GT-Md1">
                                 <rect key="frame" x="92" y="676" width="264" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="altColor"/>
@@ -1435,6 +1435,9 @@
                                             <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                             <color key="baseBackgroundColor" name="mainColour"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Qum-7n-j7C" kind="presentation" modalPresentationStyle="fullScreen" id="Cdd-ez-pgP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEQ-PB-PAV" customClass="BounceButton" customModule="Compute" customModuleProvider="target">
                                         <rect key="frame" x="193" y="615" width="160" height="49"/>
@@ -1445,7 +1448,7 @@
                                             <color key="baseBackgroundColor" name="mainColour"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="Rzl-K8-yPZ" kind="presentation" modalPresentationStyle="fullScreen" id="1rQ-gb-MsY"/>
+                                            <segue destination="Rzl-K8-yPZ" kind="presentation" identifier="returnToDeepDive" modalPresentationStyle="fullScreen" id="1rQ-gb-MsY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8n-Q7-8uO">
@@ -1540,15 +1543,15 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="36z-7F-jYW">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pX0-Ty-Hhb">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="entryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="tfc-6Q-Pez">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="entryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="3hJ-kH-wzj">
                                         <rect key="frame" x="71" y="301" width="250" height="250"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7y6-MF-Beb">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xzb-ol-2Xb">
                                         <rect key="frame" x="32" y="229" width="150" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -1564,9 +1567,9 @@
                         <outlet property="conViewFour" destination="2Mw-5N-mNK" id="Jgl-7i-72E"/>
                         <outlet property="conViewThree" destination="wYo-99-EiA" id="URh-ZV-h6n"/>
                         <outlet property="conViewTwo" destination="Lar-gZ-G4C" id="OfM-HT-Tiw"/>
-                        <outlet property="coverView" destination="36z-7F-jYW" id="ifj-WP-AYT"/>
+                        <outlet property="coverView" destination="pX0-Ty-Hhb" id="qpn-8I-nGQ"/>
                         <outlet property="feedbackBackground" destination="A0t-IR-hC1" id="awi-oP-pSV"/>
-                        <outlet property="loader" destination="7y6-MF-Beb" id="cPH-un-qmT"/>
+                        <outlet property="loader" destination="Xzb-ol-2Xb" id="zB9-Pr-lME"/>
                         <outlet property="proView" destination="ou9-mL-NE0" id="tsM-q7-NpR"/>
                         <outlet property="proViewFour" destination="rJp-iX-sYk" id="Kjo-4V-B7l"/>
                         <outlet property="proViewThree" destination="uJc-AK-n9Q" id="GMs-l8-Nmf"/>
@@ -1579,20 +1582,86 @@
             </objects>
             <point key="canvasLocation" x="2200.7633587786258" y="1078.8732394366198"/>
         </scene>
-        <!--View Controller-->
+        <!--Deep Dive Result View Controller-->
         <scene sceneID="lwE-rv-7YW">
             <objects>
-                <viewController id="Qum-7n-j7C" sceneMemberID="viewController">
+                <viewController id="Qum-7n-j7C" customClass="DeepDiveResultViewController" customModule="Compute" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fVO-4d-vsa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="subMerged.png" translatesAutoresizingMaskIntoConstraints="NO" id="clr-ff-gKr">
+                                <rect key="frame" x="64" y="128" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You earned:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1U3-r8-T8q">
+                                <rect key="frame" x="117" y="466" width="159" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="₡30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BW-HZ-Dfg">
+                                <rect key="frame" x="144" y="502" width="104" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="moon.stars.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8Zj-cs-81Y">
+                                <rect key="frame" x="44" y="557" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="secondaryColor"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sjg-Ni-tCL">
+                                <rect key="frame" x="102" y="557" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="altColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hv-yt-7EO">
+                                <rect key="frame" x="164" y="725" width="64" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="arrowshape.left.fill" catalog="system" symbolScale="large"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="VHU-OO-IQQ" kind="presentation" modalPresentationStyle="fullScreen" id="WIm-Jb-8lo"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ve-i5-SEx">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="entryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="D5K-Kb-eQN">
+                                        <rect key="frame" x="71" y="301" width="250" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hvr-70-GIG">
+                                        <rect key="frame" x="32" y="229" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="backgroundColour"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dF4-VW-v5i"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="altColor"/>
                     </view>
+                    <connections>
+                        <outlet property="coverview" destination="8ve-i5-SEx" id="kqD-Hd-Ibc"/>
+                        <outlet property="feedbackView" destination="Sjg-Ni-tCL" id="Yw8-4c-geI"/>
+                        <outlet property="goldLabel" destination="5BW-HZ-Dfg" id="fJR-K4-exv"/>
+                        <outlet property="loader" destination="hvr-70-GIG" id="fpP-pD-Fwc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KS9-Wf-iqd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2201" y="1755"/>
+            <point key="canvasLocation" x="2200.7633587786258" y="1754.9295774647887"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="Jlj-JE-Qyz">
@@ -3340,7 +3409,7 @@
         <designable name="ZpD-z7-MBX"/>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="4Uo-dC-qNh"/>
+        <segue reference="WIm-Jb-8lo"/>
         <segue reference="Oqb-Kk-ADO"/>
         <segue reference="1rQ-gb-MsY"/>
     </inferredMetricsTieBreakers>
@@ -3392,6 +3461,7 @@
         <image name="shazam.logo.fill" catalog="system" width="128" height="123"/>
         <image name="statsInfoSlideOne.png" width="225" height="225"/>
         <image name="streakCoins.png" width="75" height="75"/>
+        <image name="subMerged.png" width="375" height="375"/>
         <image name="tasksInfo" width="400" height="844"/>
         <image name="tasksSlideOne.png" width="750" height="750"/>
         <image name="trenchBadge.png" width="500" height="500"/>

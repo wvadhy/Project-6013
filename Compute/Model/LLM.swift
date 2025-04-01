@@ -22,8 +22,8 @@ class LLM: LLMDelegate {
         
     func tokenFailed(_ error: any Error) { print("Error: \(String(describing: error))") }
     
-    public func getFeedback(for score: String) async throws -> ChatResult {
-        let query = ChatQuery(messages: [.system(.init(content: "Give a short sentence of encouragment for a \(score)/10 on a programming quiz"))], model: .gpt4_o)
+    public func getFeedback(for score: String, outof total: String = "10") async throws -> ChatResult {
+        let query = ChatQuery(messages: [.system(.init(content: "Give a short sentence of encouragment for a \(score)/\(total) on a programming quiz"))], model: .gpt4_o)
         return try await model.chats(query: query)
     }
     
@@ -71,8 +71,8 @@ class LLM: LLMDelegate {
         return try await model.chats(query: query)
     }
     
-    public func analyseDeepDive(for lang: String, with code: String) async throws -> ChatResult {
-        let query = ChatQuery(messages: [.system(.init(content: "Give 5 positives and negatives which are each less than 10 words and a score for this \(lang) code: \(code)"))],
+    public func analyseDeepDive(for lang: String, with code: String, using question: String) async throws -> ChatResult {
+        let query = ChatQuery(messages: [.system(.init(content: "Give 5 positives and negatives which are each less than 10 words and a score for this \(lang) code which is trying to answer the question '\(question)': \(code)"))],
                               model: .gpt4_o,
                               responseFormat: .jsonSchema(name: "ddas", type: DeepDiveAnalysisList.self))
         return try await model.chats(query: query)

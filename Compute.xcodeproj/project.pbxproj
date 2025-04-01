@@ -110,6 +110,8 @@
 		BEA452B62D82284900F277F7 /* CodeRushQuestionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA452B52D82284900F277F7 /* CodeRushQuestionList.swift */; };
 		BEA452B82D82F1A500F277F7 /* TasksBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA452B72D82F1A400F277F7 /* TasksBrain.swift */; };
 		BEA452BA2D82F2A700F277F7 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA452B92D82F2A700F277F7 /* UserData.swift */; };
+		BEA856A72D9BE28E00E2CE02 /* subMerged.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA856A62D9BE28D00E2CE02 /* subMerged.png */; };
+		BEA856A92D9BE56200E2CE02 /* DeepDiveResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA856A82D9BE56200E2CE02 /* DeepDiveResultViewController.swift */; };
 		BEAD39592D75D63D000018C5 /* streakCoins.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAD39582D75D63D000018C5 /* streakCoins.png */; };
 		BEAD395B2D770966000018C5 /* dataStructureLight.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAD395A2D770965000018C5 /* dataStructureLight.png */; };
 		BEAD395F2D7709F9000018C5 /* dataStructuresDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAD395E2D7709F9000018C5 /* dataStructuresDark.png */; };
@@ -260,6 +262,8 @@
 		BEA452B52D82284900F277F7 /* CodeRushQuestionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeRushQuestionList.swift; sourceTree = "<group>"; };
 		BEA452B72D82F1A400F277F7 /* TasksBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksBrain.swift; sourceTree = "<group>"; };
 		BEA452B92D82F2A700F277F7 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		BEA856A62D9BE28D00E2CE02 /* subMerged.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = subMerged.png; sourceTree = "<group>"; };
+		BEA856A82D9BE56200E2CE02 /* DeepDiveResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveResultViewController.swift; sourceTree = "<group>"; };
 		BEAD39582D75D63D000018C5 /* streakCoins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = streakCoins.png; sourceTree = "<group>"; };
 		BEAD395A2D770965000018C5 /* dataStructureLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dataStructureLight.png; sourceTree = "<group>"; };
 		BEAD395E2D7709F9000018C5 /* dataStructuresDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dataStructuresDark.png; sourceTree = "<group>"; };
@@ -483,6 +487,7 @@
 				BE13DF402D9AAF5B00DA1491 /* CustomisePageController.swift */,
 				BE13DF542D9AC44B00DA1491 /* LanguageViewController.swift */,
 				BE13DF562D9AC66900DA1491 /* ExperienceViewController.swift */,
+				BEA856A82D9BE56200E2CE02 /* DeepDiveResultViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -490,6 +495,7 @@
 		BE7CEAE22D64F1C30047C5F2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BEA856A62D9BE28D00E2CE02 /* subMerged.png */,
 				BE13DF502D9ABC3F00DA1491 /* customiseBgOneDark.png */,
 				BE13DF4D2D9ABBEF00DA1491 /* customiseBgTwoDark.png */,
 				BE13DF492D9ABB2700DA1491 /* customiseBgTwo.png */,
@@ -723,6 +729,7 @@
 				BE0649D32D6622B800735B5A /* tasksSlideTwo.png in Resources */,
 				BE0D05282D91CA5E00F69E30 /* leaderboardSlideOne.png in Resources */,
 				BE0D313E2D6DCDCE00C1D99C /* levelBannerDark.png in Resources */,
+				BEA856A72D9BE28E00E2CE02 /* subMerged.png in Resources */,
 				BEC7CA752D65434F007DE945 /* inputCapsuleLight.png in Resources */,
 				BE0649B52D65F7B200735B5A /* profilePictureDark.png in Resources */,
 				BE0649B32D65F5EE00735B5A /* profilePictureLight.png in Resources */,
@@ -857,6 +864,7 @@
 				BE13DF392D99CAB100DA1491 /* Context.swift in Sources */,
 				BE0D05362D934DF500F69E30 /* DeepDiveAnalysisList.swift in Sources */,
 				BE7CEAEC2D64FA160047C5F2 /* gifLoader.swift in Sources */,
+				BEA856A92D9BE56200E2CE02 /* DeepDiveResultViewController.swift in Sources */,
 				BE0649DF2D667AE600735B5A /* ShopCollectionViewCell.swift in Sources */,
 				BE0D052E2D91CE3A00F69E30 /* StatsInfoViewController.swift in Sources */,
 				BE8122D12D9759AC00C392BB /* BoardCell.swift in Sources */,

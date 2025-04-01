@@ -77,8 +77,8 @@ class DeepDiveViewController: UIViewController {
     func setupPage() async -> Void {
         let result = await DeepDiveBrain.shared.getQuestion(for: language)[0]
         textView.text = result.code
-        inputLabel.text = result.input
-        outputLabel.text = result.output
+        inputLabel.text = result.output
+        outputLabel.text = result.input
         questionLabel.text = result.question
     }
     

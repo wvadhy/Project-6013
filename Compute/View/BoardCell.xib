@@ -64,7 +64,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </subviews>
-                <color key="backgroundColor" name="mainColour"/>
+                <color key="backgroundColor" name="altColor"/>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
@@ -78,6 +78,9 @@
     </objects>
     <resources>
         <image name="arrowtriangle.up.fill" catalog="system" width="128" height="120"/>
+        <namedColor name="altColor">
+            <color red="0.16078431372549021" green="0.45098039215686275" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="mainColour">
             <color red="0.16078431372549021" green="0.45098039215686275" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

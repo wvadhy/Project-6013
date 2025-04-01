@@ -90,16 +90,23 @@ class AnalysisViewController: UIViewController {
             conViews[i].text = result.analysis[i].negative
         }
         
-        scoreLabel.text = "\(result.score)%"
-        scoreBar.setProgress(Float(result.score) / 100, animated: true)
+        scoreLabel.text = "\(result.score + 30)%"
+        scoreBar.setProgress(Float(result.score + 30) / 100, animated: true)
         
         DeepDiveBrain.shared.updatePoints(for: Int(result.score))
+        
+        DeepDiveBrain.shared.score = result.score
         
         textView.text = DeepDiveBrain.shared.current[0].solution
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        DeepDiveBrain.shared.reset()
+        if segue.identifier == "returnToDeepDive" {
+            DeepDiveBrain.shared.reset()
+        } else {
+            let destinationVC = segue.destination as? DeepDiveResultViewController
+            destinationVC?.score = DeepDiveBrain.shared.score
+        }
     }
 
 }
