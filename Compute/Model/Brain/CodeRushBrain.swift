@@ -91,6 +91,18 @@ struct CodeRushBrain {
     mutating func reset() {
         correct = 0
         total = 0
+        initProg = 0
+        copyProg = 0
+    }
+    
+    func generateFeedback() async -> String {
+        do {
+            let result = try await LLM.ai.getFeedback(for: "\(correct)")
+            return result.choices[0].message.content?.string ?? "Error: invalid response"
+        } catch {
+            print("Error: \(error)")
+            return "error"
+        }
     }
     
     

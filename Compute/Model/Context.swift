@@ -35,6 +35,17 @@ class Context {
                     
                     Points are a total accumulation of tasks completed.
                     
+                    Users can obtain badges by meeting specific requirements, these range from completing specific numbers of tasks or by
+                    reaching certain rank and gold goals.
+                    
+                    Users can climb the leaderboard by earnining more points.
+                    
+                    Compute consists of 5 seperate tabs. A tasks tab where all current daily tasks and categorised tasks are displayed.
+                    A stats tab where users can see their progress reflected in stats and charts real time and also search up other users
+                    to track their progress too. A feedback tab where feedback is given according to the users current progress in the app.
+                    A leaderboard tab where the highest scoring users will be displayed. A account tab where important account information
+                    and settings are stored such as enable push notifications, change password, change course.
+                    
                     Do not refer to Compute as The Compute App or Compute app, just refer to it as Compute.
                     
                     My gold is \(querySnapshot.data()!["gold"] as! Int),

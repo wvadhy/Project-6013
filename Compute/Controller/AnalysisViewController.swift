@@ -1,5 +1,6 @@
 import UIKit
 import FirebaseFirestore
+import Highlightr
 
 class AnalysisViewController: UIViewController {
     
@@ -25,6 +26,8 @@ class AnalysisViewController: UIViewController {
     var language: String = "Python"
     var proViews: [UITextView] = []
     var conViews: [UITextView] = []
+    
+    var textView: UITextView = UITextView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,12 +41,30 @@ class AnalysisViewController: UIViewController {
         conViews.append(conViewTwo)
         conViews.append(conViewThree)
         conViews.append(conViewFour)
+        
+        let textStorage = CodeAttributedString()
+        textStorage.language = language
+        let layoutManager = NSLayoutManager()
+        textStorage.addLayoutManager(layoutManager)
+
+        let textContainer = NSTextContainer(size: view.bounds.size)
+        layoutManager.addTextContainer(textContainer)
+
+        textView = UITextView(frame: CGRect(x: 30, y: 424, width: 300, height: 180), textContainer: textContainer)
+        
+        textView.autocorrectionType = .no
+        textView.autocapitalizationType = .none
+        textView.spellCheckingType = .no
+        textView.backgroundColor = .black
+        textView.layer.cornerRadius = 10
+        
+        feedbackBackground.addSubview(textView)
                 
         feedbackBackground.customView(setup: true)
         
         for i in 0...3 {
-            proViews[i].layer.cornerRadius = 15
-            conViews[i].layer.cornerRadius = 15
+            proViews[i].layer.cornerRadius = 10
+            conViews[i].layer.cornerRadius = 10
         }
         
         loader.image = UIImage.gifImageWithName("computeLoader")
@@ -71,6 +92,14 @@ class AnalysisViewController: UIViewController {
         
         scoreLabel.text = "\(result.score)%"
         scoreBar.setProgress(Float(result.score) / 100, animated: true)
+        
+        DeepDiveBrain.shared.updatePoints(for: Int(result.score))
+        
+        textView.text = DeepDiveBrain.shared.current[0].solution
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        DeepDiveBrain.shared.reset()
     }
 
 }

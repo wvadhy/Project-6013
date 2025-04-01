@@ -8,8 +8,8 @@ struct DeepDiveAnalysis: StructuredOutput {
     
     static let example: Self = {
         .init(
-            positive: "The code showcased good understanding of the language and semantics with no clear logical errors",
-            negative: "The code was not well structured and is too long"
+            positive: "There were no logical errors",
+            negative: "Should use a dict instead of a list"
         )
     }()
 }

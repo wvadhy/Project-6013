@@ -81,7 +81,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                         } catch {
                           print("Error adding document: \(error)")
                         }
-                        self.performSegue(withIdentifier: Constants.mainSegue, sender: self)
+                        self.performSegue(withIdentifier: Constants.customiseSegue, sender: self)
                     }
                 }
             }

@@ -26,7 +26,6 @@ class ChatViewController: UIViewController, UITextFieldDelegate {
         inputContainer.layer.cornerRadius = 30
         inputContainer.layer.borderWidth = 1
         
-        sendButton.layer.cornerRadius = 15
         messageField.delegate = self
         
         messageView.dataSource = self

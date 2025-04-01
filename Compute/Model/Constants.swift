@@ -12,4 +12,5 @@ struct Constants {
     static let questionSegue: String = "goToQuestion"
     static let analysisSegue: String = "goToAnalysis"
     static let deepDiveSegue: String = "goToDeepDive"
+    static let customiseSegue: String = "goToCustomise"
 }

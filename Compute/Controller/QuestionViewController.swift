@@ -36,6 +36,7 @@ class QuestionViewController: UIViewController {
     var current: Int = 0
     var remaining: Int = 0
     var language: String = "Python"
+    var difficulty: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()

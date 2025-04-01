@@ -24,6 +24,7 @@ class TaskViewController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var pointsItem: UIBarButtonItem!
     
     var language: String = "Python"
+    var difficulty: Int = 1
     var brain: TasksBrain = TasksBrain()
 
     override func viewDidLoad() {
@@ -38,6 +39,7 @@ class TaskViewController: UIViewController, UITableViewDelegate {
             let gold = await UserData.shared.query(for: "gold")
             pointsItem.title = "₡\(gold)"
             Context.shared
+            FeedbackBrain.shared
         }
         
         checkMode()
@@ -63,6 +65,17 @@ class TaskViewController: UIViewController, UITableViewDelegate {
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let temp = brain.tasks[indexPath.row].difficulty
+        
+        if temp == "Easy" {
+            difficulty = 1
+        } else if temp == "Medium" {
+            difficulty = 2
+        } else {
+            difficulty = 3
+        }
+        
         if brain.tasks[indexPath.row].name == "Code rush"{
             performSegue(withIdentifier: Constants.codeRushSegue, sender: self)
         } else if brain.tasks[indexPath.row].name == "Deep dive" {
@@ -97,9 +110,11 @@ class TaskViewController: UIViewController, UITableViewDelegate {
         if (segue.identifier == "goToDeepDive") {
             let destinationVC = segue.destination as? DeepDiveViewController
             destinationVC?.language = language
+            destinationVC?.difficulty = difficulty
         } else {
             let destinationVC = segue.destination as? QuestionViewController
             destinationVC?.language = language
+            destinationVC?.difficulty = difficulty
         }
     }
     

@@ -22,13 +22,45 @@ class LLM: LLMDelegate {
         
     func tokenFailed(_ error: any Error) { print("Error: \(String(describing: error))") }
     
+    public func getFeedback(for score: String) async throws -> ChatResult {
+        let query = ChatQuery(messages: [.system(.init(content: "Give a short sentence of encouragment for a \(score)/10 on a programming quiz"))], model: .gpt4_o)
+        return try await model.chats(query: query)
+    }
+    
+    public func getImprovements() async throws -> ChatResult {
+        let query = ChatQuery(messages: [.system(.init(content: "Give me a small paragraph breakdown of how to improve my task scores, \(Context.shared.body)"))], model: .gpt4_o)
+        return try await model.chats(query: query)
+    }
+    
+    public func getWeakness() async throws -> ChatResult {
+        let query = ChatQuery(messages: [.system(.init(content: "Give me me a small paragraph breakdown of what my weaknesses are, \(Context.shared.body)"))], model: .gpt4_o)
+        return try await model.chats(query: query)
+    }
+    
+    public func getStrengths() async throws -> ChatResult {
+        let query = ChatQuery(messages: [.system(.init(content: "Give me a small paragraph breakdown of what my strengths are, \(Context.shared.body)"))], model: .gpt4_o)
+        return try await model.chats(query: query)
+    }
+    
     public func getChat(for msg: String ) async throws -> ChatResult {
         let query = ChatQuery(messages: [.system(.init(content: "\(msg), \(Context.shared.body)"))], model: .gpt4_o)
         return try await model.chats(query: query)
     }
     
-    public func getCodeRush(for lang: String) async throws -> ChatResult {
-        let query = ChatQuery(messages: [.system(.init(content: "10 short \(lang) questions"))],
+    public func getHelp(for code: String, with quest: String) async throws -> ChatResult {
+        let query = ChatQuery(messages: [.system(.init(content: "Give me a short tip but no code for how to solve: \(quest), my current code: \(code)"))], model: .gpt4_o)
+        return try await model.chats(query: query)
+    }
+    
+    public func getDeepDiveQuestion(for lang: String, with difficulty: String = "easy") async throws -> ChatResult {
+        let query = ChatQuery(messages: [.system(.init(content: "A short, \(difficulty) \(lang) programming problem with a question that is under 25 words long, example, single line input, single line output, constraints, incorrect code snippet with no comments and solution code"))],
+                              model: .gpt4_o,
+                              responseFormat: .jsonSchema(name: "ddqs", type: DeepDiveQuestion.self))
+        return try await model.chats(query: query)
+    }
+    
+    public func getCodeRush(for lang: String, with difficulty: String = "easy") async throws -> ChatResult {
+        let query = ChatQuery(messages: [.system(.init(content: "10 short \(difficulty) \(lang) questions with short answers"))],
                               model: .gpt4_o,
                               responseFormat: .jsonSchema(name: "crql", type: CodeRushQuestionList.self))
         return try await model.chats(query: query)
@@ -40,7 +72,7 @@ class LLM: LLMDelegate {
     }
     
     public func analyseDeepDive(for lang: String, with code: String) async throws -> ChatResult {
-        let query = ChatQuery(messages: [.system(.init(content: "Give 5 positives and negatives and a score for this \(lang) code: \(code)"))],
+        let query = ChatQuery(messages: [.system(.init(content: "Give 5 positives and negatives which are each less than 10 words and a score for this \(lang) code: \(code)"))],
                               model: .gpt4_o,
                               responseFormat: .jsonSchema(name: "ddas", type: DeepDiveAnalysisList.self))
         return try await model.chats(query: query)

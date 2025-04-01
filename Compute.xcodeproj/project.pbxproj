@@ -76,6 +76,16 @@
 		BE13DF352D99B4D600DA1491 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13DF342D99B4D600DA1491 /* Receipt.swift */; };
 		BE13DF372D99B69F00DA1491 /* ChatBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13DF362D99B69F00DA1491 /* ChatBrain.swift */; };
 		BE13DF392D99CAB100DA1491 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13DF382D99CAB100DA1491 /* Context.swift */; };
+		BE13DF3B2D99F6A700DA1491 /* FeedbackBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13DF3A2D99F6A700DA1491 /* FeedbackBrain.swift */; };
+		BE13DF3F2D9A889000DA1491 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13DF3E2D9A889000DA1491 /* CircularProgressView.swift */; };
+		BE13DF412D9AAF5B00DA1491 /* CustomisePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13DF402D9AAF5B00DA1491 /* CustomisePageController.swift */; };
+		BE13DF4A2D9ABB2700DA1491 /* customiseBgOne.png in Resources */ = {isa = PBXBuildFile; fileRef = BE13DF482D9ABB2700DA1491 /* customiseBgOne.png */; };
+		BE13DF4B2D9ABB2700DA1491 /* customiseBgTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = BE13DF492D9ABB2700DA1491 /* customiseBgTwo.png */; };
+		BE13DF4F2D9ABBEF00DA1491 /* customiseBgTwoDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BE13DF4D2D9ABBEF00DA1491 /* customiseBgTwoDark.png */; };
+		BE13DF512D9ABC3F00DA1491 /* customiseBgOneDark.png in Resources */ = {isa = PBXBuildFile; fileRef = BE13DF502D9ABC3F00DA1491 /* customiseBgOneDark.png */; };
+		BE13DF552D9AC44B00DA1491 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13DF542D9AC44B00DA1491 /* LanguageViewController.swift */; };
+		BE13DF572D9AC66900DA1491 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13DF562D9AC66900DA1491 /* ExperienceViewController.swift */; };
+		BE13DF592D9B1A1F00DA1491 /* DeepDiveQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13DF582D9B1A1F00DA1491 /* DeepDiveQuestion.swift */; };
 		BE30487B2D86573300B6AA2C /* DeepDiveAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE30487A2D86573300B6AA2C /* DeepDiveAnalysis.swift */; };
 		BE7CEACB2D64EBEA0047C5F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7CEACA2D64EBEA0047C5F2 /* AppDelegate.swift */; };
 		BE7CEACD2D64EBEA0047C5F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7CEACC2D64EBEA0047C5F2 /* SceneDelegate.swift */; };
@@ -214,6 +224,16 @@
 		BE13DF342D99B4D600DA1491 /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
 		BE13DF362D99B69F00DA1491 /* ChatBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBrain.swift; sourceTree = "<group>"; };
 		BE13DF382D99CAB100DA1491 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		BE13DF3A2D99F6A700DA1491 /* FeedbackBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackBrain.swift; sourceTree = "<group>"; };
+		BE13DF3E2D9A889000DA1491 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		BE13DF402D9AAF5B00DA1491 /* CustomisePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomisePageController.swift; sourceTree = "<group>"; };
+		BE13DF482D9ABB2700DA1491 /* customiseBgOne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customiseBgOne.png; sourceTree = "<group>"; };
+		BE13DF492D9ABB2700DA1491 /* customiseBgTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customiseBgTwo.png; sourceTree = "<group>"; };
+		BE13DF4D2D9ABBEF00DA1491 /* customiseBgTwoDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customiseBgTwoDark.png; sourceTree = "<group>"; };
+		BE13DF502D9ABC3F00DA1491 /* customiseBgOneDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customiseBgOneDark.png; sourceTree = "<group>"; };
+		BE13DF542D9AC44B00DA1491 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		BE13DF562D9AC66900DA1491 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
+		BE13DF582D9B1A1F00DA1491 /* DeepDiveQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveQuestion.swift; sourceTree = "<group>"; };
 		BE30487A2D86573300B6AA2C /* DeepDiveAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveAnalysis.swift; sourceTree = "<group>"; };
 		BE7CEAC72D64EBEA0047C5F2 /* Compute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7CEACA2D64EBEA0047C5F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -337,6 +357,7 @@
 				BEA452B72D82F1A400F277F7 /* TasksBrain.swift */,
 				BE8122CD2D97544800C392BB /* BoardBrain.swift */,
 				BE13DF362D99B69F00DA1491 /* ChatBrain.swift */,
+				BE13DF3A2D99F6A700DA1491 /* FeedbackBrain.swift */,
 			);
 			path = Brain;
 			sourceTree = "<group>";
@@ -416,6 +437,7 @@
 				BE8122D72D97784B00C392BB /* BoardData.swift */,
 				BE13DF342D99B4D600DA1491 /* Receipt.swift */,
 				BE13DF382D99CAB100DA1491 /* Context.swift */,
+				BE13DF3E2D9A889000DA1491 /* CircularProgressView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -458,6 +480,9 @@
 				BE0D052D2D91CE3A00F69E30 /* StatsInfoViewController.swift */,
 				BE0D05332D92E54200F69E30 /* FeedbackViewController.swift */,
 				BE13DF2E2D997F3900DA1491 /* ChatViewController.swift */,
+				BE13DF402D9AAF5B00DA1491 /* CustomisePageController.swift */,
+				BE13DF542D9AC44B00DA1491 /* LanguageViewController.swift */,
+				BE13DF562D9AC66900DA1491 /* ExperienceViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -465,6 +490,10 @@
 		BE7CEAE22D64F1C30047C5F2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BE13DF502D9ABC3F00DA1491 /* customiseBgOneDark.png */,
+				BE13DF4D2D9ABBEF00DA1491 /* customiseBgTwoDark.png */,
+				BE13DF492D9ABB2700DA1491 /* customiseBgTwo.png */,
+				BE13DF482D9ABB2700DA1491 /* customiseBgOne.png */,
 				BE8122CB2D97330F00C392BB /* computeLoader.gif */,
 				BE0D05312D91D08100F69E30 /* statsInfoSlideTwo.png */,
 				BE0D052F2D91CFFE00F69E30 /* statsInfoSlideOne.png */,
@@ -536,6 +565,7 @@
 				BE30487A2D86573300B6AA2C /* DeepDiveAnalysis.swift */,
 				BEAD397A2D809EBA000018C5 /* CodeRushQuestion.swift */,
 				BEA452B52D82284900F277F7 /* CodeRushQuestionList.swift */,
+				BE13DF582D9B1A1F00DA1491 /* DeepDiveQuestion.swift */,
 			);
 			path = Structure;
 			sourceTree = "<group>";
@@ -651,6 +681,7 @@
 				BE0693A32D81D61C00A15327 /* Trophy.png in Resources */,
 				BE7CEAE62D64F1D00047C5F2 /* logoLight.png in Resources */,
 				BE0D313C2D6DCC9C00C1D99C /* levelBannerLight.png in Resources */,
+				BE13DF4A2D9ABB2700DA1491 /* customiseBgOne.png in Resources */,
 				BE0649A82D65CDCC00735B5A /* TaskCell.xib in Resources */,
 				BE7CEAD72D64EBEB0047C5F2 /* Base in Resources */,
 				BE0D31332D6D3E0C00C1D99C /* rushCornerDark.png in Resources */,
@@ -682,11 +713,13 @@
 				BE0D31272D6D16B400C1D99C /* rushResultClipBoardDark.png in Resources */,
 				BE0649DD2D6672D600735B5A /* tasksSlideThree.png in Resources */,
 				BEAD39712D7788AD000018C5 /* javaLogo.png in Resources */,
+				BE13DF4F2D9ABBEF00DA1491 /* customiseBgTwoDark.png in Resources */,
 				BE0D31292D6D17BC00C1D99C /* rushResultCornerLight.png in Resources */,
 				BE8122CC2D97330F00C392BB /* computeLoader.gif in Resources */,
 				BE0D31572D705CB800C1D99C /* wrongAnswer.mp3 in Resources */,
 				BEB37BD32D748BE200A5A26D /* difficultyLogoLight.png in Resources */,
 				BE0649BB2D6602FF00735B5A /* tasksInfoLight.png in Resources */,
+				BE13DF4B2D9ABB2700DA1491 /* customiseBgTwo.png in Resources */,
 				BE0649D32D6622B800735B5A /* tasksSlideTwo.png in Resources */,
 				BE0D05282D91CA5E00F69E30 /* leaderboardSlideOne.png in Resources */,
 				BE0D313E2D6DCDCE00C1D99C /* levelBannerDark.png in Resources */,
@@ -713,6 +746,7 @@
 				BE0649DB2D6671D000735B5A /* water.png in Resources */,
 				BEA1D44C2D89AF9F00DE1F17 /* loading.gif in Resources */,
 				BEAD39682D770F48000018C5 /* dynamicProgrammingLight.png in Resources */,
+				BE13DF512D9ABC3F00DA1491 /* customiseBgOneDark.png in Resources */,
 				BEC9A6542D70EE3600C2D716 /* deepDiveTextBoxLight.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -778,6 +812,7 @@
 				BE0D051C2D903A0F00F69E30 /* ConnectTo.swift in Sources */,
 				BE0649B12D65F16A00735B5A /* QuestionViewController.swift in Sources */,
 				BEA452BA2D82F2A700F277F7 /* UserData.swift in Sources */,
+				BE13DF572D9AC66900DA1491 /* ExperienceViewController.swift in Sources */,
 				BE0649A52D65C73000735B5A /* TabBarController.swift in Sources */,
 				BE7CEAF42D6508A70047C5F2 /* RegisterViewController.swift in Sources */,
 				BE0D05202D90589500F69E30 /* Database.swift in Sources */,
@@ -789,11 +824,13 @@
 				BE0649A92D65CDCC00735B5A /* TaskCell.swift in Sources */,
 				BE0D05242D906DF300F69E30 /* StatsData.swift in Sources */,
 				BEA452B62D82284900F277F7 /* CodeRushQuestionList.swift in Sources */,
+				BE13DF3B2D99F6A700DA1491 /* FeedbackBrain.swift in Sources */,
 				BE7CEACB2D64EBEA0047C5F2 /* AppDelegate.swift in Sources */,
 				BE7CEAF62D650A680047C5F2 /* ForgotViewController.swift in Sources */,
 				BE0D31422D6E0EEE00C1D99C /* StatsBrain.swift in Sources */,
 				BE0D051A2D90385600F69E30 /* HTTPEchoHandler.swift in Sources */,
 				BEDD46A42D66853C004DBC47 /* ShopViewController.swift in Sources */,
+				BE13DF592D9B1A1F00DA1491 /* DeepDiveQuestion.swift in Sources */,
 				BE0D051E2D904D5600F69E30 /* Constants.swift in Sources */,
 				BE0D05342D92E54200F69E30 /* FeedbackViewController.swift in Sources */,
 				BE13DF2F2D997F3900DA1491 /* ChatViewController.swift in Sources */,
@@ -805,9 +842,12 @@
 				BEAD39842D80D35D000018C5 /* LLM.swift in Sources */,
 				BEAD397D2D80A0A3000018C5 /* Response.swift in Sources */,
 				BE13DF372D99B69F00DA1491 /* ChatBrain.swift in Sources */,
+				BE13DF3F2D9A889000DA1491 /* CircularProgressView.swift in Sources */,
+				BE13DF412D9AAF5B00DA1491 /* CustomisePageController.swift in Sources */,
 				BE0693A12D81D20F00A15327 /* AnalysisViewController.swift in Sources */,
 				BE06939F2D81C50D00A15327 /* DeepDiveBrain.swift in Sources */,
 				BEAD398C2D80DB5D000018C5 /* Token.swift in Sources */,
+				BE13DF552D9AC44B00DA1491 /* LanguageViewController.swift in Sources */,
 				BEC9A6572D711BE100C2D716 /* DeepDiveViewController.swift in Sources */,
 				BE0D31532D6F72EF00C1D99C /* BadgeCollectionViewCell.swift in Sources */,
 				BEC7CA712D65307C007DE945 /* TaskViewController.swift in Sources */,
