@@ -51,6 +51,14 @@ class DeepDiveBrain {
         }
     }
     
+    func getHighScore() async -> String {
+        return await UserData.shared.query(for: "deepDiveHighScore")
+    }
+    
+    func getAverage() async -> String {
+        return await UserData.shared.query(for: "deepDiveAverage")
+    }
+    
     func updateScores() -> Void {
         score += 2 * difficulty
         played += 1

@@ -5,8 +5,8 @@ class StatsBrain {
     
     static var shared: StatsBrain = StatsBrain()
     
-    var correct: Int = 0
-    var total: Int = 0
+    var correct: Int = 15
+    var total: Int = 20
     
     init(){
         Task {

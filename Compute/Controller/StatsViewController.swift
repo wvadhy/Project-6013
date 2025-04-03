@@ -18,8 +18,12 @@ class StatsViewController: UIViewController, ChartViewDelegate, UISearchBarDeleg
     @IBOutlet weak var growthRateView: UIView!
     @IBOutlet weak var rateView: UIView!
     @IBOutlet weak var accountStatsView: UIView!
+    
     @IBOutlet weak var codeRushHighScore: UILabel!
     @IBOutlet weak var codeRushAverage: UILabel!
+    @IBOutlet weak var deepDiveHighScore: UILabel!
+    @IBOutlet weak var deepDiveAverage: UILabel!
+    
     @IBOutlet weak var pointsView: UIView!
     @IBOutlet weak var rankView: UIView!
     @IBOutlet weak var rankLabel: UILabel!
@@ -51,6 +55,10 @@ class StatsViewController: UIViewController, ChartViewDelegate, UISearchBarDeleg
             
             codeRushHighScore.text = await CodeRushBrain.shared.getHighScore()
             codeRushAverage.text = await CodeRushBrain.shared.getAverage()
+            
+            deepDiveHighScore.text = await DeepDiveBrain.shared.getHighScore()
+            deepDiveAverage.text = await DeepDiveBrain.shared.getAverage()
+            
         }
         
         let barChart =         StatsBrain.shared

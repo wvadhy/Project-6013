@@ -2276,8 +2276,8 @@
                                                         <color key="textColor" name="mainColour"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="67%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zk3-Ah-rBZ">
-                                                        <rect key="frame" x="173" y="45" width="44" height="20"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zk3-Ah-rBZ">
+                                                        <rect key="frame" x="173" y="45" width="40" height="20"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
                                                         <color key="textColor" name="mainColour"/>
@@ -2290,15 +2290,15 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uht-jQ-scy">
-                                                        <rect key="frame" x="21" y="73" width="58" height="14"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accuracy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uht-jQ-scy">
+                                                        <rect key="frame" x="26" y="73" width="49" height="14"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accuracy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tky-qh-jP1">
-                                                        <rect key="frame" x="98" y="73" width="49" height="14"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tky-qh-jP1">
+                                                        <rect key="frame" x="94" y="73" width="58" height="14"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
@@ -2469,7 +2469,7 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="tintColor" systemColor="systemPinkColor"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hf-WB-KBc">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hf-WB-KBc">
                                                         <rect key="frame" x="42" y="50" width="42" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -2607,6 +2607,8 @@
                         <outlet property="accountStatsView" destination="oGw-vO-BUe" id="iMx-Ew-RhH"/>
                         <outlet property="codeRushAverage" destination="xqX-bL-xAz" id="sbF-nr-WjG"/>
                         <outlet property="codeRushHighScore" destination="WwW-HK-AJ1" id="U64-eu-gY3"/>
+                        <outlet property="deepDiveAverage" destination="zk3-Ah-rBZ" id="RBz-gH-Cln"/>
+                        <outlet property="deepDiveHighScore" destination="Yan-87-AQa" id="pin-fO-I3t"/>
                         <outlet property="growthRateView" destination="iXY-Mz-U1E" id="Kfo-mL-UF2"/>
                         <outlet property="growthView" destination="zZf-Qh-MkU" id="swC-cj-8o1"/>
                         <outlet property="learningTimeLabel" destination="8Hf-WB-KBc" id="b8c-fF-Izl"/>
@@ -3410,7 +3412,7 @@
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="WIm-Jb-8lo"/>
-        <segue reference="Oqb-Kk-ADO"/>
+        <segue reference="i6c-41-x9w"/>
         <segue reference="1rQ-gb-MsY"/>
     </inferredMetricsTieBreakers>
     <resources>
