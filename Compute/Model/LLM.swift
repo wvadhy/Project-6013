@@ -7,7 +7,7 @@ class LLM: LLMDelegate {
     
     var network = LLMNetwork()
     
-    let url = URL(string: "https://computex.cloud/data/HD8qogh8O7HDo8ydhgoUJDS.json")!
+    let url = URL(string: "https://computex.cloud/data/token.php?token=\(ProcessInfo.processInfo.environment["SECRET"]!)")!
     
     var model = OpenAI(apiToken: "")
     
